@@ -15,6 +15,17 @@ The platform integrates multi-node distributed batch compute (Hadoop HDFS, MapRe
 - **Target Market:** National Stock Exchange of India (NSE) — NIFTY 50 Universe
 - **Project Type:** Laboratory Capstone Implementation
 
+### Project Team
+
+This project was developed collaboratively by a four-member team with equal attribution across all members:
+
+| S. No. | Team Member | Roll Number |
+| :---: | :--- | :---: |
+| 1 | Ashish Ranjan | 231210027 |
+| 2 | Anish Kumar | 231210016 |
+| 3 | Garimella Tejaswini | 231210044 |
+| 4 | Jeeshan Chaudhary | 231210053 |
+
 ---
 
 ## 2. Overview
