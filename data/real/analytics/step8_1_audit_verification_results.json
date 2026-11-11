@@ -1,0 +1,61 @@
+{
+  "audit_version": "Step 8.1 Independent Audit",
+  "timestamp": "2026-11-10T23:15:00Z",
+  "source_data_audit": {
+    "market_rows": 121962,
+    "market_unique_symbols": 50,
+    "market_date_range": "2015-01-01 to 2024-12-31",
+    "market_unique_dates": 2467,
+    "benchmark_rows": 2459,
+    "benchmark_unique_dates": 2459,
+    "dates_market_only_count": 8,
+    "dates_market_only": [
+      "2015-01-01",
+      "2015-04-15",
+      "2016-01-01",
+      "2016-08-12",
+      "2018-01-01",
+      "2019-01-01",
+      "2019-10-27",
+      "2020-11-14"
+    ]
+  },
+  "formula_verifications": {
+    "risk_return_table": {
+      "status": "PASS",
+      "max_abs_error_annualized_return": 0.0,
+      "max_abs_error_annualized_volatility": 0.0,
+      "max_abs_error_sharpe_rf6": 0.0,
+      "max_abs_error_positive_days_pct": 0.0,
+      "symbols_evaluated": 50
+    },
+    "benchmark_table": {
+      "status": "PASS",
+      "max_abs_error_beta": 0.0,
+      "max_abs_error_jensen_alpha": 0.0,
+      "max_abs_error_tracking_error": 0.0,
+      "symbols_evaluated": 50
+    },
+    "market_breadth_table": {
+      "status": "PASS",
+      "max_abs_error_advance_ratio": 0.0,
+      "max_abs_error_pct_above_ma200": 0.0,
+      "dates_evaluated": 2467
+    }
+  },
+  "discrepancies_identified": [
+    {
+      "item": "ADANIENT 99% Daily VaR in Report Text",
+      "reported_in_text": "7.21%",
+      "actual_computed_var99": "8.37% (0.0837)",
+      "actual_computed_var95": "4.28% (0.0428)",
+      "severity": "LOW (Narrative transcription discrepancy; underlying calculation in code is correct)"
+    },
+    {
+      "item": "TATAMOTORS Maximum Drawdown in Report Text",
+      "reported_in_text": "-88.08%",
+      "actual_computed_mdd": "-89.08% (-0.8908)",
+      "severity": "LOW (Typographical discrepancy of 1.00%; peak 2015-01-27 to trough 2020-04-03 verified)"
+    }
+  ]
+}

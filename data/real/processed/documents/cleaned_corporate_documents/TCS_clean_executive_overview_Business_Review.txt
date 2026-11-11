@@ -1,0 +1,28 @@
+TATA CONSULTANCY SERVICES LIMITED
+ANNUAL REPORT 2023-24
+DIRECTORS' REPORT & BUSINESS PERFORMANCE REVIEW
+
+1. Executive Summary & Financial Highlights
+Tata Consultancy Services (TCS) closed FY 2023-24 with consolidated revenue of Rs 240,893 crore (US$ 29.08 billion), representing 6.8% reported growth and 3.4% growth in constant currency terms. Operating margin expanded by 50 basis points to 24.6%, and net margin was 19.3%. Net income for the year climbed 9.0% to Rs 46,585 crore.
+
+The Company declared total dividends of Rs 73 per equity share for the year, including a special dividend of Rs 18 per share. TCS generated strong free cash flow of Rs 44,321 crore, converting 95.1% of net profit into cash.
+
+2. Order Book and Market Demand
+TCS achieved an all-time high Total Contract Value (TCV) order book of US$ 42.7 billion in FY 2024. Deal wins were broad-based across industry verticals:
+- Banking, Financial Services, and Insurance (BFSI): US$ 14.9 billion TCV.
+- Consumer Business: US$ 6.3 billion TCV.
+- Communication, Media, and Information Services: US$ 4.2 billion TCV.
+- Manufacturing: US$ 4.8 billion TCV.
+
+Major multi-year strategic engagements included Aviva (UK life and pensions platform), Nest (workplace pension digital transformation), and British telecommunications operators.
+
+3. Artificial Intelligence & Technology Innovation
+TCS trained over 350,000 employees in foundational and advanced Artificial Intelligence and Machine Learning disciplines. The Company launched:
+- TCS AI WisdomNext: An integrated platform orchestrating multiple generative AI models and hyper-automation agents.
+- Co-Innovation Network (COIN): Over 3,000 startups partnered across global innovation hubs.
+
+4. Human Capital and Workforce Dynamics
+Total employee headcount at fiscal year-end was 601,546 professionals representing 152 nationalities. Women constituted 35.6% of the workforce. IT services attrition moderated significantly to 12.5% for the last twelve months (LTM), returning to industry-benchmark ranges.
+
+5. Risk Management Framework
+Primary enterprise risks include demand slowdown in discretionary IT spending across North American financial institutions, wage inflation in niche cybersecurity and cloud architecture skills, and strict immigration regulatory changes across European and American delivery jurisdictions.

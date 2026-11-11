@@ -1,0 +1,50 @@
+{
+  "execution_timestamp": "2026-11-09T16:55:57Z",
+  "input_dataset": "data\\real\\processed\\market\\consolidated_market_features.csv",
+  "total_jobs": 5,
+  "total_duration_sec": 11.002,
+  "execution_mode": "Hadoop Streaming Local Reference Pipeline",
+  "cluster_compatible": true,
+  "jobs": [
+    {
+      "job_id": "job1",
+      "name": "Volume Aggregation by Ticker",
+      "output_file": "data\\real\\distributed\\mapreduce\\job1_volume_by_ticker.tsv",
+      "row_count": 50,
+      "execution_time_sec": 1.873,
+      "yarn_command": "hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \\\n  -files volume_by_ticker_mapper.py,volume_by_ticker_reducer.py \\\n  -input /financial-intelligence/real/processed/market/consolidated_market_features.csv \\\n  -output /financial-intelligence/real/distributed/mapreduce/job1_volume_by_ticker \\\n  -mapper \"python3 volume_by_ticker_mapper.py\" \\\n  -reducer \"python3 volume_by_ticker_reducer.py\""
+    },
+    {
+      "job_id": "job2",
+      "name": "Cross-Sectional Daily Market Return",
+      "output_file": "data\\real\\distributed\\mapreduce\\job2_daily_market_return.tsv",
+      "row_count": 2466,
+      "execution_time_sec": 2.062,
+      "yarn_command": "hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \\\n  -files daily_market_return_mapper.py,daily_market_return_reducer.py \\\n  -input /financial-intelligence/real/processed/market/consolidated_market_features.csv \\\n  -output /financial-intelligence/real/distributed/mapreduce/job2_daily_market_return \\\n  -mapper \"python3 daily_market_return_mapper.py\" \\\n  -reducer \"python3 daily_market_return_reducer.py\""
+    },
+    {
+      "job_id": "job3",
+      "name": "Company-Level 10-Year Average Daily Return",
+      "output_file": "data\\real\\distributed\\mapreduce\\job3_company_avg_return.tsv",
+      "row_count": 50,
+      "execution_time_sec": 1.908,
+      "yarn_command": "hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \\\n  -files company_avg_return_mapper.py,company_avg_return_reducer.py \\\n  -input /financial-intelligence/real/processed/market/consolidated_market_features.csv \\\n  -output /financial-intelligence/real/distributed/mapreduce/job3_company_avg_return \\\n  -mapper \"python3 company_avg_return_mapper.py\" \\\n  -reducer \"python3 company_avg_return_reducer.py\""
+    },
+    {
+      "job_id": "job4",
+      "name": "Yearly Trading Volume per Ticker",
+      "output_file": "data\\real\\distributed\\mapreduce\\job4_yearly_volume.tsv",
+      "row_count": 496,
+      "execution_time_sec": 2.186,
+      "yarn_command": "hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \\\n  -files yearly_volume_mapper.py,yearly_volume_reducer.py \\\n  -input /financial-intelligence/real/processed/market/consolidated_market_features.csv \\\n  -output /financial-intelligence/real/distributed/mapreduce/job4_yearly_volume \\\n  -mapper \"python3 yearly_volume_mapper.py\" \\\n  -reducer \"python3 yearly_volume_reducer.py\""
+    },
+    {
+      "job_id": "job5",
+      "name": "Market Data Quality & Integrity Summary",
+      "output_file": "data\\real\\distributed\\mapreduce\\job5_market_quality_summary.tsv",
+      "row_count": 5,
+      "execution_time_sec": 2.919,
+      "yarn_command": "hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \\\n  -files market_quality_mapper.py,market_quality_reducer.py \\\n  -input /financial-intelligence/real/processed/market/consolidated_market_features.csv \\\n  -output /financial-intelligence/real/distributed/mapreduce/job5_market_quality_summary \\\n  -mapper \"python3 market_quality_mapper.py\" \\\n  -reducer \"python3 market_quality_reducer.py\""
+    }
+  ]
+}

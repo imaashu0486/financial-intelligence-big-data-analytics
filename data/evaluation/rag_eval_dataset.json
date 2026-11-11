@@ -1,0 +1,242 @@
+[
+  {
+    "id": "eval_01",
+    "question": "What was ACME Corporation's total revenue in FY 2024 and how much did it increase YoY?",
+    "expected_answer": "ACME Corporation reported total revenue of INR 18,450 crore (USD 2.21 billion) in FY 2024, representing an increase of 14.2% year-over-year from INR 16,155 crore in FY 2023.",
+    "expected_keywords": ["18,450", "14.2%", "revenue"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Financial performance"
+  },
+  {
+    "id": "eval_02",
+    "question": "What were ACME Corporation's operating profit (EBITDA) and net profit after tax for FY 2024?",
+    "expected_answer": "Operating profit (EBITDA) was INR 3,690 crore (20.0% margin), and Net Profit After Tax was INR 2,214 crore, reflecting a growth of 19.8% YoY.",
+    "expected_keywords": ["3,690", "20.0%", "2,214", "net profit"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Revenue/profit metrics"
+  },
+  {
+    "id": "eval_03",
+    "question": "What is ACME Corporation's strategic investment plan for Artificial Intelligence and Machine Learning?",
+    "expected_answer": "ACME plans to invest INR 1,200 crore over the next three years in AI research and development, establishing an AI Centre of Excellence in Bengaluru with 500 dedicated researchers.",
+    "expected_keywords": ["1,200", "bengaluru", "500", "researchers"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Business strategy"
+  },
+  {
+    "id": "eval_04",
+    "question": "What is ACME's target for net-zero carbon emissions and what was its renewable energy share in FY 2024?",
+    "expected_answer": "ACME has committed to achieving net-zero carbon emissions by 2035. In FY 2024, renewable energy sources accounted for 42% of the company's total energy consumption, up from 31% in FY 2023.",
+    "expected_keywords": ["net-zero", "2035", "42%"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Renewable energy"
+  },
+  {
+    "id": "eval_05",
+    "question": "What are the macroeconomic and currency risks disclosed by ACME Corporation?",
+    "expected_answer": "Macroeconomic risk includes global economic slowdown and geopolitical tensions delaying client spending. Currency risk arises because 62% of revenue is denominated in foreign currencies (primarily USD and GBP), hedged 60-70% using forward contracts.",
+    "expected_keywords": ["62%", "foreign", "forward contracts", "macroeconomic"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Risk disclosure"
+  },
+  {
+    "id": "eval_06",
+    "question": "What data protection regulations are mentioned in ACME Corporation's compliance risk section?",
+    "expected_answer": "ACME notes compliance risks across 12 jurisdictions, specifically highlighting India's Digital Personal Data Protection Act, GDPR, and CCPA.",
+    "expected_keywords": ["digital personal data protection", "gdpr", "ccpa"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Regulatory compliance"
+  },
+  {
+    "id": "eval_07",
+    "question": "What is Globex Industries' market share and installed capacity in renewable energy?",
+    "expected_answer": "Globex holds a 12% market share in India's renewable energy sector (third-largest private producer) and operates 8.5 GW of total installed power capacity, including 4.2 GW of renewable energy.",
+    "expected_keywords": ["12%", "renewable", "8.5 gw", "4.2 gw"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Renewable energy"
+  },
+  {
+    "id": "eval_08",
+    "question": "What are Globex Industries' expansion plans and capital expenditure for solar and wind capacity by FY 2027?",
+    "expected_answer": "Globex plans to add 3.0 GW of solar and wind capacity by FY 2027, requiring a total investment of INR 18,000 crore funded via internal accruals (40%), project finance debt (45%), and equity (15%).",
+    "expected_keywords": ["3.0 gw", "18,000", "2027"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Business strategy"
+  },
+  {
+    "id": "eval_09",
+    "question": "What is Globex's green hydrogen electrolyzer project in Gujarat?",
+    "expected_answer": "Globex signed an MoU for a 500 MW green hydrogen electrolyzer project in Gujarat, targeting production by FY 2027 with an annual output of 50,000 metric tonnes.",
+    "expected_keywords": ["500 mw", "green hydrogen", "gujarat", "50,000"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Business strategy"
+  },
+  {
+    "id": "eval_10",
+    "question": "What was Globex Industries' total revenue and EBITDA margin for FY 2024?",
+    "expected_answer": "Total Revenue reached INR 22,800 crore (+18.3% YoY) and EBITDA was INR 5,700 crore with a 25.0% margin.",
+    "expected_keywords": ["22,800", "5,700", "25.0%"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Financial performance"
+  },
+  {
+    "id": "eval_11",
+    "question": "What is Globex Industries' total debt, debt-to-equity ratio, and average borrowing cost?",
+    "expected_answer": "Globex has total debt of INR 28,500 crore, a debt-to-equity ratio of 1.8x, and an average cost of borrowing of 8.4% (down from 9.1% in FY 2023).",
+    "expected_keywords": ["28,500", "1.8x", "8.4%"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Debt reduction"
+  },
+  {
+    "id": "eval_12",
+    "question": "What is the size and composition of Globex Industries' outstanding order book as of March 31, 2024?",
+    "expected_answer": "Total outstanding order book stood at INR 42,000 crore (1.8 years revenue visibility), comprised of 45% Renewable Energy, 30% Highways, 15% Urban Infrastructure, and 10% Thermal Power maintenance.",
+    "expected_keywords": ["42,000", "45%", "highways", "urban infrastructure"],
+    "relevant_documents": ["globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Business strategy"
+  },
+  {
+    "id": "eval_13",
+    "question": "What is Initech Ltd's three lines of defence risk management framework?",
+    "expected_answer": "Initech's framework consists of First Line (business units managing day-to-day risks with risk champions), Second Line (centralized Risk Management Department headed by the CRO setting policies), and Third Line (Internal Audit providing independent assurance).",
+    "expected_keywords": ["three lines", "first line", "second line", "third line", "cro"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Risk disclosure"
+  },
+  {
+    "id": "eval_14",
+    "question": "What are Initech's gross loan portfolio, GNPA, NNPA, and Provision Coverage Ratio?",
+    "expected_answer": "As of March 31, 2024, gross loan portfolio was INR 32,000 crore, GNPA was INR 960 crore (3.0%), NNPA was INR 384 crore (1.2%), and Provision Coverage Ratio was 68%.",
+    "expected_keywords": ["32,000", "gnpa", "3.0%", "nnpa", "1.2%", "68%"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Risk disclosure"
+  },
+  {
+    "id": "eval_15",
+    "question": "What is Initech's Capital Adequacy Ratio compared to the regulatory minimum?",
+    "expected_answer": "Initech's Capital Adequacy Ratio (CAR) is 18.2%, compared to the regulatory minimum requirement of 15%.",
+    "expected_keywords": ["18.2%", "15%", "capital adequacy"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Regulatory compliance"
+  },
+  {
+    "id": "eval_16",
+    "question": "How does an interest rate increase of 100 basis points impact Initech's economic value of equity?",
+    "expected_answer": "Initech has a negative duration gap of 0.8 years; a parallel upward shift of 100 basis points in the yield curve would reduce the economic value of equity by approximately INR 280 crore.",
+    "expected_keywords": ["0.8 years", "100 basis points", "280 crore"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Market risk"
+  },
+  {
+    "id": "eval_17",
+    "question": "What cybersecurity and technology safeguards are implemented by Initech Ltd?",
+    "expected_answer": "Safeguards include a 24/7 Security Operations Centre (SOC), annual ISO 27001 certification, quarterly VAPT, and business continuity plans with RPO of 4 hours and RTO of 8 hours.",
+    "expected_keywords": ["soc", "iso 27001", "vapt", "rpo", "rto"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Cybersecurity risk"
+  },
+  {
+    "id": "eval_18",
+    "question": "How many fraudulent applications did Initech's AI fraud detection system flag in FY 2024, and what losses were prevented?",
+    "expected_answer": "The AI-based fraud detection system flagged 2,400 suspicious applications, confirming 1,800 as fraudulent and preventing estimated losses of INR 45 crore.",
+    "expected_keywords": ["2,400", "1,800", "45 crore", "fraud"],
+    "relevant_documents": ["initech_risk_disclosure_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Operational risk"
+  },
+  {
+    "id": "eval_19",
+    "question": "How do ACME Corporation and Globex Industries compare in terms of their debt-to-equity ratio?",
+    "expected_answer": "ACME Corporation maintains a conservative net debt-to-equity ratio of 0.12, whereas Globex Industries operates with a higher infrastructure leverage of 1.8x debt-to-equity.",
+    "expected_keywords": ["0.12", "1.8x", "debt-to-equity"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt", "globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Cross-document comparison"
+  },
+  {
+    "id": "eval_20",
+    "question": "What was the total revenue comparison between ACME Corporation and Globex Industries in FY 2024?",
+    "expected_answer": "ACME Corporation reported revenue of INR 18,450 crore, while Globex Industries reported revenue of INR 22,800 crore.",
+    "expected_keywords": ["18,450", "22,800", "revenue"],
+    "relevant_documents": ["acme_corp_annual_report_2024.txt", "globex_investor_presentation_2024.txt"],
+    "relevant_pages": [1],
+    "answerable": true,
+    "category": "Cross-document comparison"
+  },
+  {
+    "id": "eval_21",
+    "question": "What is the launch date of ACME Corporation's commercial spacecraft mission to Mars?",
+    "expected_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+    "expected_keywords": ["insufficient information"],
+    "relevant_documents": [],
+    "relevant_pages": [],
+    "answerable": false,
+    "category": "Unsupported questions"
+  },
+  {
+    "id": "eval_22",
+    "question": "How many Bitcoin and Ethereum tokens does Globex Industries hold in its corporate treasury?",
+    "expected_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+    "expected_keywords": ["insufficient information"],
+    "relevant_documents": [],
+    "relevant_pages": [],
+    "answerable": false,
+    "category": "Unsupported questions"
+  },
+  {
+    "id": "eval_23",
+    "question": "What is the name and manufacturer of Initech's CEO personal luxury yacht docked in Monaco?",
+    "expected_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+    "expected_keywords": ["insufficient information"],
+    "relevant_documents": [],
+    "relevant_pages": [],
+    "answerable": false,
+    "category": "Unsupported questions"
+  },
+  {
+    "id": "eval_24",
+    "question": "What is the projected stock price target for ACME Corporation on the National Stock Exchange for December 2030?",
+    "expected_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+    "expected_keywords": ["insufficient information"],
+    "relevant_documents": [],
+    "relevant_pages": [],
+    "answerable": false,
+    "category": "Unsupported questions"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "total_pairs_evaluated": 1225,
+  "highest_correlated_pairs": [
+    {
+      "stock_1": "JSWSTEEL",
+      "stock_2": "TATASTEEL",
+      "correlation": 0.7206
+    },
+    {
+      "stock_1": "BAJAJFINSV",
+      "stock_2": "BAJFINANCE",
+      "correlation": 0.7187
+    },
+    {
+      "stock_1": "HINDALCO",
+      "stock_2": "TATASTEEL",
+      "correlation": 0.6929
+    },
+    {
+      "stock_1": "AXISBANK",
+      "stock_2": "ICICIBANK",
+      "correlation": 0.6664
+    },
+    {
+      "stock_1": "ICICIBANK",
+      "stock_2": "SBIN",
+      "correlation": 0.6621
+    },
+    {
+      "stock_1": "GRASIM",
+      "stock_2": "ULTRACEMCO",
+      "correlation": 0.6098
+    },
+    {
+      "stock_1": "HINDALCO",
+      "stock_2": "JSWSTEEL",
+      "correlation": 0.608
+    },
+    {
+      "stock_1": "HDFCBANK",
+      "stock_2": "KOTAKBANK",
+      "correlation": 0.5879
+    },
+    {
+      "stock_1": "ADANIENT",
+      "stock_2": "ADANIPORTS",
+      "correlation": 0.5778
+    },
+    {
+      "stock_1": "INFY",
+      "stock_2": "TCS",
+      "correlation": 0.5727
+    }
+  ],
+  "lowest_correlated_pairs": [
+    {
+      "stock_1": "COALINDIA",
+      "stock_2": "HINDUNILVR",
+      "correlation": 0.1079
+    },
+    {
+      "stock_1": "HINDUNILVR",
+      "stock_2": "POWERGRID",
+      "correlation": 0.1085
+    },
+    {
+      "stock_1": "BRITANNIA",
+      "stock_2": "POWERGRID",
+      "correlation": 0.1133
+    },
+    {
+      "stock_1": "DRREDDY",
+      "stock_2": "TITAN",
+      "correlation": 0.1162
+    },
+    {
+      "stock_1": "COALINDIA",
+      "stock_2": "NESTLEIND",
+      "correlation": 0.1178
+    },
+    {
+      "stock_1": "CIPLA",
+      "stock_2": "HDFCLIFE",
+      "correlation": 0.1224
+    },
+    {
+      "stock_1": "BAJFINANCE",
+      "stock_2": "DRREDDY",
+      "correlation": 0.1271
+    },
+    {
+      "stock_1": "NESTLEIND",
+      "stock_2": "POWERGRID",
+      "correlation": 0.128
+    },
+    {
+      "stock_1": "DRREDDY",
+      "stock_2": "POWERGRID",
+      "correlation": 0.1289
+    },
+    {
+      "stock_1": "NESTLEIND",
+      "stock_2": "ONGC",
+      "correlation": 0.1296
+    }
+  ]
+}

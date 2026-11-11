@@ -1,0 +1,66 @@
+{
+  "validation_timestamp": "2026-11-09T23:45:28.745477",
+  "all_checks_passed": true,
+  "verdict": "PASS",
+  "total_checks": 6,
+  "passed_checks": 6,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "check_id": "MR_JOB_1_VOLUME",
+      "description": "MapReduce 10-year volume by ticker matches pandas ground truth exactly",
+      "passed": true,
+      "total_tickers": 50,
+      "mismatches": 0
+    },
+    {
+      "check_id": "MR_JOB_2_DAILY_RETURN",
+      "description": "MapReduce cross-sectional daily market return matches ground truth (tol=1e-6)",
+      "passed": true,
+      "total_dates": 2466,
+      "max_absolute_error": 5.82092036550963e-09
+    },
+    {
+      "check_id": "MR_SPARK_COMPANY_AVG_RETURN",
+      "description": "MapReduce Job 3 and Spark Op 1 average returns match ground truth",
+      "passed": true,
+      "max_err_mr_vs_gt": 5.011394778754036e-09,
+      "max_err_spark_vs_gt": 3.469446951953614e-18
+    },
+    {
+      "check_id": "YEARLY_VOLUME_CONSISTENCY",
+      "description": "Yearly market totals in Spark and per-ticker yearly totals in MapReduce match ground truth",
+      "passed": true,
+      "spark_yearly_totals_match": true,
+      "mapreduce_ticker_yearly_totals_match": true
+    },
+    {
+      "check_id": "MR_DATA_QUALITY_AUDIT",
+      "description": "MapReduce data quality summary matches exact dataframe integrity counts",
+      "passed": true,
+      "total_rows": 121962,
+      "valid_ohlc": 121962,
+      "missing_return": 50
+    },
+    {
+      "check_id": "SPARK_VOLATILITY_AND_SHARPE_RANKING",
+      "description": "Spark annualized volatility and top 5 Sharpe ratio rankings match ground truth",
+      "passed": true,
+      "max_volatility_error": 5.551115123125783e-17,
+      "top_5_sharpe_spark": [
+        "TRENT",
+        "BAJFINANCE",
+        "ADANIENT",
+        "BAJAJFINSV",
+        "TITAN"
+      ],
+      "top_5_sharpe_ground_truth": [
+        "TRENT",
+        "BAJFINANCE",
+        "ADANIENT",
+        "BAJAJFINSV",
+        "TITAN"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "pipeline_name": "NIFTY_50_Real_Market_ML_Pipeline",
+    "feature_set": [
+      "daily_adjusted_return",
+      "return_5d",
+      "return_20d",
+      "return_60d",
+      "volatility_20d",
+      "volatility_60d",
+      "close_to_ma20",
+      "close_to_ma50",
+      "close_to_ma200",
+      "volume_ratio",
+      "hl_pct_range",
+      "rolling_max_drawdown_60d",
+      "benchmark_daily_return",
+      "relative_return_vs_nifty"
+    ],
+    "feature_count": 14,
+    "train_period": "2015-03-31 to 2021-12-30",
+    "train_samples": 81619,
+    "val_period": "2022-01-03 to 2023-12-28",
+    "val_samples": 24600,
+    "test_period": "2024-01-01 to 2024-12-30",
+    "test_samples": 12250,
+    "target_variable": "target_next_day_return (isolated)",
+    "leakage_controls": [
+      "Strict date-based panel split (no random row shuffling)",
+      "Boundary day purging at split transitions",
+      "StandardScaler fit exclusively on train set",
+      "Zero inclusion of future target returns or price levels"
+    ]
+  },
+  "classification": {
+    "Majority_Baseline": {
+      "val_accuracy": 0.522,
+      "test_accuracy": 0.5064,
+      "test_balanced_accuracy": 0.5,
+      "test_precision": 0.5064,
+      "test_recall": 1.0,
+      "test_f1": 0.6723,
+      "test_roc_auc": 0.5
+    },
+    "Logistic_Regression": {
+      "val_accuracy": 0.5249,
+      "test_accuracy": 0.5074,
+      "test_balanced_accuracy": 0.5053,
+      "test_precision": 0.5104,
+      "test_recall": 0.669,
+      "test_f1": 0.579,
+      "test_roc_auc": 0.5167,
+      "confusion_matrix": [
+        [
+          2066,
+          3981
+        ],
+        [
+          2053,
+          4150
+        ]
+      ]
+    },
+    "Random_Forest": {
+      "val_accuracy": 0.5313,
+      "test_accuracy": 0.5061,
+      "test_balanced_accuracy": 0.505,
+      "test_precision": 0.5106,
+      "test_recall": 0.5942,
+      "test_f1": 0.5492,
+      "test_roc_auc": 0.5134,
+      "confusion_matrix": [
+        [
+          2514,
+          3533
+        ],
+        [
+          2517,
+          3686
+        ]
+      ]
+    },
+    "Gradient_Boosting": {
+      "val_accuracy": 0.5292,
+      "test_accuracy": 0.507,
+      "test_balanced_accuracy": 0.5072,
+      "test_precision": 0.5138,
+      "test_recall": 0.4935,
+      "test_f1": 0.5034,
+      "test_roc_auc": 0.5049,
+      "confusion_matrix": [
+        [
+          3150,
+          2897
+        ],
+        [
+          3142,
+          3061
+        ]
+      ]
+    }
+  },
+  "regression": {
+    "Zero_Return_Baseline": {
+      "val_mae": 0.011664,
+      "val_rmse": 0.016813,
+      "test_mae": 0.011838,
+      "test_rmse": 0.017141,
+      "test_r2_conventional": -0.001334,
+      "test_r2_relative_vs_zero": 0.0,
+      "test_r2": -0.001334,
+      "test_directional_accuracy": 0.5
+    },
+    "Ridge_Regression": {
+      "val_mae": 0.011657,
+      "val_rmse": 0.016817,
+      "test_mae": 0.011834,
+      "test_rmse": 0.01711,
+      "test_r2_conventional": 0.00229,
+      "test_r2_relative_vs_zero": 0.003618,
+      "test_r2": 0.00229,
+      "test_directional_accuracy": 0.511
+    },
+    "Random_Forest_Regressor": {
+      "val_mae": 0.011625,
+      "val_rmse": 0.016727,
+      "test_mae": 0.011823,
+      "test_rmse": 0.016877,
+      "test_r2_conventional": 0.029265,
+      "test_r2_relative_vs_zero": 0.030557,
+      "test_r2": 0.029265,
+      "test_directional_accuracy": 0.5058
+    },
+    "Gradient_Boosting_Regressor": {
+      "val_mae": 0.011718,
+      "val_rmse": 0.016822,
+      "test_mae": 0.012029,
+      "test_rmse": 0.017328,
+      "test_r2_conventional": -0.023394,
+      "test_r2_relative_vs_zero": -0.022031,
+      "test_r2": -0.023394,
+      "test_directional_accuracy": 0.4975
+    }
+  },
+  "feature_importance": {
+    "benchmark_daily_return": 0.1852,
+    "relative_return_vs_nifty": 0.0787,
+    "daily_adjusted_return": 0.0739,
+    "close_to_ma20": 0.072,
+    "return_5d": 0.0655,
+    "hl_pct_range": 0.0653,
+    "close_to_ma200": 0.0612,
+    "volatility_60d": 0.0603,
+    "return_20d": 0.0595,
+    "volatility_20d": 0.0572,
+    "rolling_max_drawdown_60d": 0.0558,
+    "close_to_ma50": 0.0556,
+    "volume_ratio": 0.0553,
+    "return_60d": 0.0545
+  }
+}

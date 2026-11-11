@@ -1,0 +1,38 @@
+{
+  "execution_timestamp": "2026-11-10T17:09:38Z",
+  "spark_application_id": "app-20261110170818-0001",
+  "spark_master": "spark://hadoop-master:7077",
+  "input_dataset_hdfs": "hdfs://hadoop-master:9000/financial-intelligence/real/processed/market/consolidated_market_features.parquet",
+  "analytics_output_hdfs_root": "hdfs://hadoop-master:9000/financial-intelligence/real/analytics",
+  "total_records_processed": 121962,
+  "duration_seconds": 62.26,
+  "top_5_composite_equities": [
+    "HCLTECH",
+    "TITAN",
+    "BAJFINANCE",
+    "INFY",
+    "ADANIENT"
+  ],
+  "generated_hdfs_tables": [
+    {
+      "name": "risk_return_metrics",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/analytics/risk_return_metrics.parquet"
+    },
+    {
+      "name": "benchmark_relative_metrics",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/analytics/benchmark_relative_metrics.parquet"
+    },
+    {
+      "name": "market_regime_breadth",
+      "rows": 2467,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/analytics/market_regime_breadth.parquet"
+    },
+    {
+      "name": "composite_stock_rankings",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/analytics/composite_stock_rankings.parquet"
+    }
+  ]
+}

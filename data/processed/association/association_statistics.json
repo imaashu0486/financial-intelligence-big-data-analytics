@@ -1,0 +1,315 @@
+{
+  "num_frequent_itemsets": 47,
+  "itemset_size_distribution": {
+    "1": 10,
+    "2": 37
+  },
+  "num_rules": 10,
+  "num_rules_lift_gt_1": 10,
+  "num_rules_lift_gt_1_5": 0,
+  "rule_antecedent_size_distribution": {
+    "1": 10
+  },
+  "rule_consequent_size_distribution": {
+    "1": 10
+  },
+  "rule_metrics": {
+    "lift": {
+      "min": 1.0433,
+      "max": 1.2888,
+      "mean": 1.1419
+    },
+    "confidence": {
+      "min": 0.3008,
+      "max": 0.3529,
+      "mean": 0.3294
+    },
+    "support": {
+      "min": 0.070539,
+      "max": 0.095436,
+      "mean": 0.080083
+    }
+  },
+  "top_itemsets_by_support": [
+    {
+      "itemset": [
+        "BAJFINANCE_UP",
+        "TCS_UP"
+      ],
+      "size": 2,
+      "support": 0.095436
+    },
+    {
+      "itemset": [
+        "BAJFINANCE_UP",
+        "RELIANCE_UP"
+      ],
+      "size": 2,
+      "support": 0.091286
+    },
+    {
+      "itemset": [
+        "BAJFINANCE_UP",
+        "BHARTIARTL_UP"
+      ],
+      "size": 2,
+      "support": 0.085062
+    },
+    {
+      "itemset": [
+        "ICICIBANK_UP",
+        "TCS_UP"
+      ],
+      "size": 2,
+      "support": 0.080913
+    },
+    {
+      "itemset": [
+        "TCS_UP",
+        "WIPRO_UP"
+      ],
+      "size": 2,
+      "support": 0.076763
+    },
+    {
+      "itemset": [
+        "ICICIBANK_UP",
+        "INFY_UP"
+      ],
+      "size": 2,
+      "support": 0.076763
+    },
+    {
+      "itemset": [
+        "BHARTIARTL_UP",
+        "WIPRO_UP"
+      ],
+      "size": 2,
+      "support": 0.076763
+    },
+    {
+      "itemset": [
+        "HDFCBANK_UP",
+        "WIPRO_UP"
+      ],
+      "size": 2,
+      "support": 0.074689
+    },
+    {
+      "itemset": [
+        "INFY_UP",
+        "TCS_UP"
+      ],
+      "size": 2,
+      "support": 0.074689
+    },
+    {
+      "itemset": [
+        "BAJFINANCE_UP",
+        "HDFCBANK_UP"
+      ],
+      "size": 2,
+      "support": 0.074689
+    }
+  ],
+  "top_rules_by_lift": [
+    {
+      "rule": "HDFCBANK_UP -> WIPRO_UP",
+      "lift": 1.2888,
+      "confidence": 0.352941,
+      "support": 0.074689
+    },
+    {
+      "rule": "INFY_UP -> ICICIBANK_UP",
+      "lift": 1.2728,
+      "confidence": 0.327434,
+      "support": 0.076763
+    },
+    {
+      "rule": "INFY_UP -> TCS_UP",
+      "lift": 1.1633,
+      "confidence": 0.318584,
+      "support": 0.074689
+    },
+    {
+      "rule": "ICICIBANK_UP -> TCS_UP",
+      "lift": 1.1485,
+      "confidence": 0.314516,
+      "support": 0.080913
+    },
+    {
+      "rule": "INFY_UP -> RELIANCE_UP",
+      "lift": 1.133,
+      "confidence": 0.300885,
+      "support": 0.070539
+    },
+    {
+      "rule": "HDFCBANK_UP -> BAJFINANCE_UP",
+      "lift": 1.1047,
+      "confidence": 0.352941,
+      "support": 0.074689
+    },
+    {
+      "rule": "BHARTIARTL_UP -> WIPRO_UP",
+      "lift": 1.0984,
+      "confidence": 0.300813,
+      "support": 0.076763
+    },
+    {
+      "rule": "TCS_UP -> BAJFINANCE_UP",
+      "lift": 1.0907,
+      "confidence": 0.348485,
+      "support": 0.095436
+    },
+    {
+      "rule": "RELIANCE_UP -> BAJFINANCE_UP",
+      "lift": 1.0759,
+      "confidence": 0.34375,
+      "support": 0.091286
+    },
+    {
+      "rule": "BHARTIARTL_UP -> BAJFINANCE_UP",
+      "lift": 1.0433,
+      "confidence": 0.333333,
+      "support": 0.085062
+    }
+  ],
+  "top_rules_by_confidence": [
+    {
+      "rule": "HDFCBANK_UP -> WIPRO_UP",
+      "confidence": 0.352941,
+      "lift": 1.2888,
+      "support": 0.074689
+    },
+    {
+      "rule": "HDFCBANK_UP -> BAJFINANCE_UP",
+      "confidence": 0.352941,
+      "lift": 1.1047,
+      "support": 0.074689
+    },
+    {
+      "rule": "TCS_UP -> BAJFINANCE_UP",
+      "confidence": 0.348485,
+      "lift": 1.0907,
+      "support": 0.095436
+    },
+    {
+      "rule": "RELIANCE_UP -> BAJFINANCE_UP",
+      "confidence": 0.34375,
+      "lift": 1.0759,
+      "support": 0.091286
+    },
+    {
+      "rule": "BHARTIARTL_UP -> BAJFINANCE_UP",
+      "confidence": 0.333333,
+      "lift": 1.0433,
+      "support": 0.085062
+    },
+    {
+      "rule": "INFY_UP -> ICICIBANK_UP",
+      "confidence": 0.327434,
+      "lift": 1.2728,
+      "support": 0.076763
+    },
+    {
+      "rule": "INFY_UP -> TCS_UP",
+      "confidence": 0.318584,
+      "lift": 1.1633,
+      "support": 0.074689
+    },
+    {
+      "rule": "ICICIBANK_UP -> TCS_UP",
+      "confidence": 0.314516,
+      "lift": 1.1485,
+      "support": 0.080913
+    },
+    {
+      "rule": "INFY_UP -> RELIANCE_UP",
+      "confidence": 0.300885,
+      "lift": 1.133,
+      "support": 0.070539
+    },
+    {
+      "rule": "BHARTIARTL_UP -> WIPRO_UP",
+      "confidence": 0.300813,
+      "lift": 1.0984,
+      "support": 0.076763
+    }
+  ],
+  "item_frequency": [
+    {
+      "item": "BAJFINANCE_UP",
+      "frequency_in_itemsets": 10,
+      "support": 0.319502
+    },
+    {
+      "item": "RELIANCE_UP",
+      "frequency_in_itemsets": 10,
+      "support": 0.26556
+    },
+    {
+      "item": "WIPRO_UP",
+      "frequency_in_itemsets": 10,
+      "support": 0.273859
+    },
+    {
+      "item": "INFY_UP",
+      "frequency_in_itemsets": 10,
+      "support": 0.23444
+    },
+    {
+      "item": "ICICIBANK_UP",
+      "frequency_in_itemsets": 9,
+      "support": 0.257261
+    },
+    {
+      "item": "TCS_UP",
+      "frequency_in_itemsets": 8,
+      "support": 0.273859
+    },
+    {
+      "item": "BHARTIARTL_UP",
+      "frequency_in_itemsets": 8,
+      "support": 0.255187
+    },
+    {
+      "item": "SBIN_UP",
+      "frequency_in_itemsets": 7,
+      "support": 0.26556
+    },
+    {
+      "item": "HDFCBANK_UP",
+      "frequency_in_itemsets": 6,
+      "support": 0.211618
+    },
+    {
+      "item": "LT_UP",
+      "frequency_in_itemsets": 6,
+      "support": 0.236515
+    }
+  ],
+  "transaction_summary": {
+    "num_transactions": 482,
+    "num_unique_items": 10,
+    "unique_items": [
+      "BAJFINANCE_UP",
+      "BHARTIARTL_UP",
+      "HDFCBANK_UP",
+      "ICICIBANK_UP",
+      "INFY_UP",
+      "LT_UP",
+      "RELIANCE_UP",
+      "SBIN_UP",
+      "TCS_UP",
+      "WIPRO_UP"
+    ],
+    "avg_transaction_size": 2.59,
+    "min_transaction_size": 1,
+    "max_transaction_size": 7,
+    "median_transaction_size": 2,
+    "return_threshold": 0.01,
+    "min_support": 0.05,
+    "min_confidence": 0.3,
+    "min_lift": 1.0
+  }
+}

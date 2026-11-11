@@ -1,0 +1,48 @@
+{
+  "execution_timestamp": "2026-11-10T16:51:40Z",
+  "spark_application_id": "app-20261110165043-0000",
+  "spark_master": "spark://hadoop-master:7077",
+  "input_hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/processed/market/consolidated_market_features.parquet",
+  "output_hdfs_root": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark",
+  "total_rows_processed": 121962,
+  "duration_sec": 53.47,
+  "top_5_sharpe_stocks": [
+    "TRENT",
+    "BAJFINANCE",
+    "ADANIENT",
+    "BAJAJFINSV",
+    "TITAN"
+  ],
+  "operations": [
+    {
+      "op": "op1_ticker_returns",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/ticker_avg_returns.parquet"
+    },
+    {
+      "op": "op2_ticker_volatility",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/ticker_volatility.parquet"
+    },
+    {
+      "op": "op3_daily_volume",
+      "rows": 2467,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/daily_market_volume.parquet"
+    },
+    {
+      "op": "op4_benchmark_relative",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/benchmark_relative.parquet"
+    },
+    {
+      "op": "op5_yearly_summary",
+      "rows": 10,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/yearly_market_summary.parquet"
+    },
+    {
+      "op": "op6_stock_rankings",
+      "rows": 50,
+      "hdfs_path": "hdfs://hadoop-master:9000/financial-intelligence/real/distributed/spark/stock_rankings.parquet"
+    }
+  ]
+}

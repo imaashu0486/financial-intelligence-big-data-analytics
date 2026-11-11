@@ -1,0 +1,47 @@
+{
+  "execution_timestamp": "2026-11-09T18:14:30Z",
+  "input_dataset": "data\\real\\processed\\market\\consolidated_market_features.parquet",
+  "master": "local[*]",
+  "app_name": "RealFinancialAnalytics",
+  "total_records_processed": 121962,
+  "duration_sec": 49.703,
+  "operations": [
+    {
+      "id": "op1",
+      "name": "ticker_avg_returns",
+      "parquet": "data\\real\\distributed\\spark\\ticker_avg_returns.parquet",
+      "rows": 50
+    },
+    {
+      "id": "op2",
+      "name": "ticker_volatility",
+      "parquet": "data\\real\\distributed\\spark\\ticker_volatility.parquet",
+      "rows": 50
+    },
+    {
+      "id": "op3",
+      "name": "daily_market_volume",
+      "parquet": "data\\real\\distributed\\spark\\daily_market_volume.parquet",
+      "rows": 2467
+    },
+    {
+      "id": "op4",
+      "name": "benchmark_relative",
+      "parquet": "data\\real\\distributed\\spark\\benchmark_relative.parquet",
+      "rows": 50
+    },
+    {
+      "id": "op5",
+      "name": "yearly_market_summary",
+      "parquet": "data\\real\\distributed\\spark\\yearly_market_summary.parquet",
+      "rows": 10
+    },
+    {
+      "id": "op6",
+      "name": "stock_rankings",
+      "parquet": "data\\real\\distributed\\spark\\stock_rankings.parquet",
+      "rows": 50
+    }
+  ],
+  "cluster_submit_command": "spark-submit \\\n  --master yarn \\\n  --deploy-mode client \\\n  --executor-memory 2G \\\n  --num-executors 2 \\\n  src/bigdata/real_spark_pipeline.py"
+}

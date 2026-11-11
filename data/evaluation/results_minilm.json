@@ -1,0 +1,2039 @@
+{
+  "summary": {
+    "total_samples": 24,
+    "answerable_samples": 20,
+    "unsupported_samples": 4,
+    "retrieval": {
+      "recall_at_k": {
+        "1": 0.95,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "precision_at_k": {
+        "1": 1.0,
+        "3": 0.8333,
+        "5": 0.76
+      },
+      "hit_rate_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "avg_retrieval_score": 0.4798
+    },
+    "answer_quality": {
+      "answerability_accuracy": 0.9167,
+      "supported_answer_rate": 0.9,
+      "unsupported_rejection_rate": 1.0,
+      "avg_keyword_coverage": 0.6442,
+      "citation_presence_rate": 0.9,
+      "citation_validity_rate": 0.7
+    },
+    "latency_ms": {
+      "avg_retrieval": 35.39,
+      "avg_generation": 0.41,
+      "avg_total": 35.8
+    }
+  },
+  "queries": [
+    {
+      "sample_id": "eval_01",
+      "question": "What was ACME Corporation's total revenue in FY 2024 and how much did it increase YoY?",
+      "category": "Financial performance",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4853,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.3333,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 41.65,
+        "generation_latency_ms": 0.7,
+        "total_latency_ms": 42.35
+      },
+      "generated_answer": "According to acme_corp_annual_report_2024.txt (page 1):\n\"Digital Financial Services:\nRevenue of INR 4,350 crore (+15.8% YoY). Artificial Intelligence and Machine Learning: ACME plans to invest INR\n   1,200 crore over the next three years in AI research and development.\"\n\nSources cited: [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 3] (score: 0.5150), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 7] (score: 0.4918)",
+      "citations": [
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c3",
+          "chunk_index": 3,
+          "score": 0.515,
+          "rank": 1,
+          "snippet": "00 crore for delivery\nin FY 2025\u20132026.\n\nDigital Financial Services:\nRevenue of INR 4,350 crore (+15.8% YoY). The company's digital payments\nplatform processed 2.1 billion transactions during the year...."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c7",
+          "chunk_index": 7,
+          "score": 0.4918,
+          "rank": 2,
+          "snippet": "24. Loss of any major client could materially impact\n   revenue.\n\n7. TALENT ATTRITION RISK: The technology industry faces high employee\n   turnover rates. ACME's attrition rate was 16.2% in FY 2024, d..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.4897,
+          "rank": 3,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c4",
+          "chunk_index": 4,
+          "score": 0.4652,
+          "rank": 4,
+          "snippet": "egic acquisitions and joint ventures. A budget of INR 800 crore\n   has been allocated for M&A activities in FY 2025.\n\n3. Sustainability: ACME has committed to achieving net-zero carbon\n   emissions by..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c0",
+          "chunk_index": 0,
+          "score": 0.4646,
+          "rank": 5,
+          "snippet": "================================================================================\nACME CORPORATION \u2014 ANNUAL REPORT FY 2024\n==============================================================================..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_02",
+      "question": "What were ACME Corporation's operating profit (EBITDA) and net profit after tax for FY 2024?",
+      "category": "Revenue/profit metrics",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5201,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 34.0,
+        "generation_latency_ms": 0.49,
+        "total_latency_ms": 34.49
+      },
+      "generated_answer": "According to acme_corp_annual_report_2024.txt (page 1):\n\"Net Profit After Tax: INR 2,214 crore, a growth of 19.8% from INR 1,848\ncrore in FY 2023. Operating Profit (EBITDA): INR 3,690 crore, representing an EBITDA margin\nof 20.0%, compared to 18.5% in the prior year. FINANCIAL HIGHLIGHTS \u2014 FY 2024\n------------------------------\nTotal Revenue: INR 18,450 crore (USD 2.21 billion), an increase of 14.2%\nyear-over-year from INR 16,155 crore in FY 2023.\"\n\nSources cited: [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 1] (score: 0.6255), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 7] (score: 0.5172)",
+      "citations": [
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c1",
+          "chunk_index": 1,
+          "score": 0.6255,
+          "rank": 1,
+          "snippet": "ountries, with major operations in India, the United States,\nthe United Kingdom, and Singapore.\n\nFINANCIAL HIGHLIGHTS \u2014 FY 2024\n------------------------------\nTotal Revenue: INR 18,450 crore (USD 2.21..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c7",
+          "chunk_index": 7,
+          "score": 0.5172,
+          "rank": 2,
+          "snippet": "24. Loss of any major client could materially impact\n   revenue.\n\n7. TALENT ATTRITION RISK: The technology industry faces high employee\n   turnover rates. ACME's attrition rate was 16.2% in FY 2024, d..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c4",
+          "chunk_index": 4,
+          "score": 0.5022,
+          "rank": 3,
+          "snippet": "egic acquisitions and joint ventures. A budget of INR 800 crore\n   has been allocated for M&A activities in FY 2025.\n\n3. Sustainability: ACME has committed to achieving net-zero carbon\n   emissions by..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c8",
+          "chunk_index": 8,
+          "score": 0.4899,
+          "rank": 4,
+          "snippet": "ng FY 2024, exceeding the statutory requirement of 2% of\naverage net profit.\n\nOUTLOOK FOR FY 2025\n-------------------\nManagement expects revenue growth of 12\u201315% in FY 2025, driven by:\n- Continued mom..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c0",
+          "chunk_index": 0,
+          "score": 0.4655,
+          "rank": 5,
+          "snippet": "================================================================================\nACME CORPORATION \u2014 ANNUAL REPORT FY 2024\n==============================================================================..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_03",
+      "question": "What is ACME Corporation's strategic investment plan for Artificial Intelligence and Machine Learning?",
+      "category": "Business strategy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4421,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.25,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 61.69,
+        "generation_latency_ms": 0.46,
+        "total_latency_ms": 62.14
+      },
+      "generated_answer": "According to acme_corp_annual_report_2024.txt (page 1):\n\"Artificial Intelligence and Machine Learning: ACME plans to invest INR\n   1,200 crore over the next three years in AI research and development. STRATEGIC PRIORITIES\n--------------------\n1. International Expansion: The company is targeting entry into the\n   Southeast Asian market (Vietnam, Indonesia, Thailand) through\n   strategic acquisitions and joint ventures.\"\n\nSources cited: [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 3] (score: 0.6649), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 0] (score: 0.4381)",
+      "citations": [
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c3",
+          "chunk_index": 3,
+          "score": 0.6649,
+          "rank": 1,
+          "snippet": "00 crore for delivery\nin FY 2025\u20132026.\n\nDigital Financial Services:\nRevenue of INR 4,350 crore (+15.8% YoY). The company's digital payments\nplatform processed 2.1 billion transactions during the year...."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c0",
+          "chunk_index": 0,
+          "score": 0.4381,
+          "rank": 2,
+          "snippet": "================================================================================\nACME CORPORATION \u2014 ANNUAL REPORT FY 2024\n==============================================================================..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c4",
+          "chunk_index": 4,
+          "score": 0.3889,
+          "rank": 3,
+          "snippet": "egic acquisitions and joint ventures. A budget of INR 800 crore\n   has been allocated for M&A activities in FY 2025.\n\n3. Sustainability: ACME has committed to achieving net-zero carbon\n   emissions by..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c8",
+          "chunk_index": 8,
+          "score": 0.3779,
+          "rank": 4,
+          "snippet": "ng FY 2024, exceeding the statutory requirement of 2% of\naverage net profit.\n\nOUTLOOK FOR FY 2025\n-------------------\nManagement expects revenue growth of 12\u201315% in FY 2025, driven by:\n- Continued mom..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c6",
+          "chunk_index": 6,
+          "score": 0.3408,
+          "rank": 5,
+          "snippet": "CPA).\n   Non-compliance could result in significant penalties and reputational\n   damage.\n\n4. TECHNOLOGY OBSOLESCENCE RISK: Rapid technological change, particularly\n   in AI and cloud computing, requi..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_04",
+      "question": "What is ACME's target for net-zero carbon emissions and what was its renewable energy share in FY 2024?",
+      "category": "Renewable energy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333,
+          "5": 0.6
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4764,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.6,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 58.1,
+        "generation_latency_ms": 0.38,
+        "total_latency_ms": 58.48
+      },
+      "generated_answer": "According to acme_corp_annual_report_2024.txt (page 1):\n\"Sustainability: ACME has committed to achieving net-zero carbon\n   emissions by 2035. In FY 2024, renewable energy sources accounted for\n   42% of the company's total energy consumption, up from 31% in FY 2023.\"\n\nSources cited: [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 4] (score: 0.6287), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 15] (score: 0.4933)",
+      "citations": [
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c4",
+          "chunk_index": 4,
+          "score": 0.6287,
+          "rank": 1,
+          "snippet": "egic acquisitions and joint ventures. A budget of INR 800 crore\n   has been allocated for M&A activities in FY 2025.\n\n3. Sustainability: ACME has committed to achieving net-zero carbon\n   emissions by..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c5",
+          "chunk_index": 15,
+          "score": 0.4933,
+          "rank": 2,
+          "snippet": "is represents approximately 1.8 years of revenue visibility.\n\nOrder book composition:\n- Renewable Energy: 45%\n- Highways: 30%\n- Urban Infrastructure: 15%\n- Thermal Power (maintenance): 10%\n\nSUSTAINABI..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.4278,
+          "rank": 3,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c7",
+          "chunk_index": 7,
+          "score": 0.4226,
+          "rank": 4,
+          "snippet": "24. Loss of any major client could materially impact\n   revenue.\n\n7. TALENT ATTRITION RISK: The technology industry faces high employee\n   turnover rates. ACME's attrition rate was 16.2% in FY 2024, d..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c3",
+          "chunk_index": 3,
+          "score": 0.4095,
+          "rank": 5,
+          "snippet": "00 crore for delivery\nin FY 2025\u20132026.\n\nDigital Financial Services:\nRevenue of INR 4,350 crore (+15.8% YoY). The company's digital payments\nplatform processed 2.1 billion transactions during the year...."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_05",
+      "question": "What are the macroeconomic and currency risks disclosed by ACME Corporation?",
+      "category": "Risk disclosure",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333,
+          "5": 0.4
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4503,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": false,
+        "keyword_coverage": 0.0,
+        "citation_present": false,
+        "citation_validity": 0.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 35.94,
+        "generation_latency_ms": 0.43,
+        "total_latency_ms": 36.37
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    },
+    {
+      "sample_id": "eval_06",
+      "question": "What data protection regulations are mentioned in ACME Corporation's compliance risk section?",
+      "category": "Regulatory compliance",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6667,
+          "5": 0.6
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4291,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.0,
+        "citation_present": true,
+        "citation_validity": 0.6,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 31.92,
+        "generation_latency_ms": 0.42,
+        "total_latency_ms": 32.33
+      },
+      "generated_answer": "According to acme_corp_annual_report_2024.txt (page 1):\n\"CYBERSECURITY RISK: As a technology company handling sensitive client\n   data, ACME faces persistent cybersecurity threats including ransomware,\n   phishing, and advanced persistent threats (APTs). Non-compliance could result in significant penalties and reputational\n   damage. TECHNOLOGY OBSOLESCENCE RISK: Rapid technological change, particularly\n   in AI and cloud computing, requires continuous investment in R&D.\"\n\nSources cited: [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 6] (score: 0.4792), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 5] (score: 0.4783)",
+      "citations": [
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c6",
+          "chunk_index": 6,
+          "score": 0.4792,
+          "rank": 1,
+          "snippet": "CPA).\n   Non-compliance could result in significant penalties and reputational\n   damage.\n\n4. TECHNOLOGY OBSOLESCENCE RISK: Rapid technological change, particularly\n   in AI and cloud computing, requi..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c5",
+          "chunk_index": 5,
+          "score": 0.4783,
+          "rank": 2,
+          "snippet": "bal economic slowdown, inflationary pressures,\n   and geopolitical tensions (including trade restrictions) could reduce\n   client spending on technology services and delay project timelines.\n\n2. CURRE..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c6",
+          "chunk_index": 24,
+          "score": 0.4189,
+          "rank": 3,
+          "snippet": "y fraud, document forgery, and collusion. The company deployed\n   an AI-based fraud detection system in FY 2024 that flagged 2,400\n   suspicious applications, of which 1,800 were confirmed fraudulent,..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c5",
+          "chunk_index": 23,
+          "score": 0.3864,
+          "rank": 4,
+          "snippet": "----\nOperational risk includes the risk of loss resulting from inadequate\nor failed internal processes, people, systems, or external events.\n\nKey operational risk areas:\n\n1. TECHNOLOGY AND CYBER RISK:..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c7",
+          "chunk_index": 7,
+          "score": 0.3827,
+          "rank": 5,
+          "snippet": "24. Loss of any major client could materially impact\n   revenue.\n\n7. TALENT ATTRITION RISK: The technology industry faces high employee\n   turnover rates. ACME's attrition rate was 16.2% in FY 2024, d..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_07",
+      "question": "What is Globex Industries' market share and installed capacity in renewable energy?",
+      "category": "Renewable energy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5686,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 30.73,
+        "generation_latency_ms": 0.42,
+        "total_latency_ms": 31.14
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy producer in the country. Key competitive advantages include:\n- Integrated operations across the energy value chain\n- 8.5 GW of installed power generation capacity (4.2 GW renewable)\n- Long-term Power Purchase Agreements (PPAs) with state utilities\n- Strong government relationships built over 25 years\n- Proprietary project management technology reducing execution timelines\n  by 15\u201320% compared to industry average\n\nGROWTH STRATEGY\n---------------\n1. RENEWABLE ENERGY EXPANSION: Globex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore.\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 11] (score: 0.7551), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 10] (score: 0.7041)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c1",
+          "chunk_index": 11,
+          "score": 0.7551,
+          "rank": 1,
+          "snippet": "SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy pro..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.7041,
+          "rank": 2,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c2",
+          "chunk_index": 12,
+          "score": 0.4714,
+          "rank": 3,
+          "snippet": "obex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. Financing will be through a mix of internal accruals (40%),\n   project finance d..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c6",
+          "chunk_index": 16,
+          "score": 0.4645,
+          "rank": 4,
+          "snippet": ". INTEREST RATE RISK: With total debt of INR 28,500 crore, a 100 basis\n   point increase in interest rates would impact annual interest expense\n   by approximately INR 170 crore. The company uses inte..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c5",
+          "chunk_index": 15,
+          "score": 0.448,
+          "rank": 5,
+          "snippet": "is represents approximately 1.8 years of revenue visibility.\n\nOrder book composition:\n- Renewable Energy: 45%\n- Highways: 30%\n- Urban Infrastructure: 15%\n- Thermal Power (maintenance): 10%\n\nSUSTAINABI..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_08",
+      "question": "What are Globex Industries' expansion plans and capital expenditure for solar and wind capacity by FY 2027?",
+      "category": "Business strategy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6667,
+          "5": 0.8
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5271,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.8,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 33.71,
+        "generation_latency_ms": 0.38,
+        "total_latency_ms": 34.09
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"RENEWABLE ENERGY EXPANSION: Globex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy producer in the country. Key competitive advantages include:\n- Integrated operations across the energy value chain\n- 8.5 GW of installed power generation capacity (4.2 GW renewable)\n- Long-term Power Purchase Agreements (PPAs) with state utilities\n- Strong government relationships built over 25 years\n- Proprietary project management technology reducing execution timelines\n  by 15\u201320% compared to industry average\n\nGROWTH STRATEGY\n---------------\n1.\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 11] (score: 0.6531), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 12] (score: 0.6160)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c1",
+          "chunk_index": 11,
+          "score": 0.6531,
+          "rank": 1,
+          "snippet": "SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy pro..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c2",
+          "chunk_index": 12,
+          "score": 0.616,
+          "rank": 2,
+          "snippet": "obex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. Financing will be through a mix of internal accruals (40%),\n   project finance d..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c8",
+          "chunk_index": 8,
+          "score": 0.5138,
+          "rank": 3,
+          "snippet": "ng FY 2024, exceeding the statutory requirement of 2% of\naverage net profit.\n\nOUTLOOK FOR FY 2025\n-------------------\nManagement expects revenue growth of 12\u201315% in FY 2025, driven by:\n- Continued mom..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.4363,
+          "rank": 4,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.4161,
+          "rank": 5,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_09",
+      "question": "What is Globex's green hydrogen electrolyzer project in Gujarat?",
+      "category": "Business strategy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4652,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.75,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 28.3,
+        "generation_latency_ms": 0.33,
+        "total_latency_ms": 28.63
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"GREEN HYDROGEN: The company has signed a memorandum of understanding\n   with a European technology partner for a 500 MW green hydrogen\n   electrolyzer project in Gujarat. Financing will be through a mix of internal accruals (40%),\n   project finance debt (45%), and equity issuance (15%). HIGHWAY BOT PROJECTS: Globex currently operates 1,200 km of national\n   highways under Build-Operate-Transfer (BOT) concessions.\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 12] (score: 0.6767), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 10] (score: 0.4505)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c2",
+          "chunk_index": 12,
+          "score": 0.6767,
+          "rank": 1,
+          "snippet": "obex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. Financing will be through a mix of internal accruals (40%),\n   project finance d..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.4505,
+          "rank": 2,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c1",
+          "chunk_index": 11,
+          "score": 0.4425,
+          "rank": 3,
+          "snippet": "SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy pro..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c5",
+          "chunk_index": 15,
+          "score": 0.3896,
+          "rank": 4,
+          "snippet": "is represents approximately 1.8 years of revenue visibility.\n\nOrder book composition:\n- Renewable Energy: 45%\n- Highways: 30%\n- Urban Infrastructure: 15%\n- Thermal Power (maintenance): 10%\n\nSUSTAINABI..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c4",
+          "chunk_index": 14,
+          "score": 0.3667,
+          "rank": 5,
+          "snippet": "crore, of which 72% is project\nfinance debt secured against specific assets and cash flows.\n\nDebt maturity profile:\n- Within 1 year: INR 4,200 crore (14.7%)\n- 1 to 3 years: INR 8,600 crore (30.2%)\n- 3..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_10",
+      "question": "What was Globex Industries' total revenue and EBITDA margin for FY 2024?",
+      "category": "Financial performance",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333,
+          "5": 0.4
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5831,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.4,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 36.07,
+        "generation_latency_ms": 0.57,
+        "total_latency_ms": 36.64
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"FINANCIAL SUMMARY \u2014 FY 2024\n----------------------------\nTotal Revenue: INR 22,800 crore (+18.3% YoY)\nEBITDA: INR 5,700 crore (25.0% margin)\nNet Profit: INR 2,280 crore (+22.5% YoY)\nTotal Debt: INR 28,500 crore\nDebt-to-Equity Ratio: 1.8x\nInterest Coverage Ratio: 3.2x\nReturn on Equity (ROE): 14.5%\n\nDEBT PROFILE AND CAPITAL STRUCTURE\n-----------------------------------\nGlobex has a total debt of INR 28,500 crore, of which 72% is project\nfinance debt secured against specific assets and cash flows. 50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 13] (score: 0.6578), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 1] (score: 0.5953)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.6578,
+          "rank": 1,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c1",
+          "chunk_index": 1,
+          "score": 0.5953,
+          "rank": 2,
+          "snippet": "ountries, with major operations in India, the United States,\nthe United Kingdom, and Singapore.\n\nFINANCIAL HIGHLIGHTS \u2014 FY 2024\n------------------------------\nTotal Revenue: INR 18,450 crore (USD 2.21..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.5757,
+          "rank": 3,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c8",
+          "chunk_index": 8,
+          "score": 0.5545,
+          "rank": 4,
+          "snippet": "ng FY 2024, exceeding the statutory requirement of 2% of\naverage net profit.\n\nOUTLOOK FOR FY 2025\n-------------------\nManagement expects revenue growth of 12\u201315% in FY 2025, driven by:\n- Continued mom..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.5321,
+          "rank": 5,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_11",
+      "question": "What is Globex Industries' total debt, debt-to-equity ratio, and average borrowing cost?",
+      "category": "Debt reduction",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5186,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.6667,
+        "citation_present": true,
+        "citation_validity": 0.8,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 36.8,
+        "generation_latency_ms": 0.44,
+        "total_latency_ms": 37.23
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"FINANCIAL SUMMARY \u2014 FY 2024\n----------------------------\nTotal Revenue: INR 22,800 crore (+18.3% YoY)\nEBITDA: INR 5,700 crore (25.0% margin)\nNet Profit: INR 2,280 crore (+22.5% YoY)\nTotal Debt: INR 28,500 crore\nDebt-to-Equity Ratio: 1.8x\nInterest Coverage Ratio: 3.2x\nReturn on Equity (ROE): 14.5%\n\nDEBT PROFILE AND CAPITAL STRUCTURE\n-----------------------------------\nGlobex has a total debt of INR 28,500 crore, of which 72% is project\nfinance debt secured against specific assets and cash flows. 50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore. Debt maturity profile:\n- Wi\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 13] (score: 0.6063), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 14] (score: 0.5416)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.6063,
+          "rank": 1,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c4",
+          "chunk_index": 14,
+          "score": 0.5416,
+          "rank": 2,
+          "snippet": "crore, of which 72% is project\nfinance debt secured against specific assets and cash flows.\n\nDebt maturity profile:\n- Within 1 year: INR 4,200 crore (14.7%)\n- 1 to 3 years: INR 8,600 crore (30.2%)\n- 3..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c2",
+          "chunk_index": 12,
+          "score": 0.5057,
+          "rank": 3,
+          "snippet": "obex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. Financing will be through a mix of internal accruals (40%),\n   project finance d..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c6",
+          "chunk_index": 16,
+          "score": 0.4751,
+          "rank": 4,
+          "snippet": ". INTEREST RATE RISK: With total debt of INR 28,500 crore, a 100 basis\n   point increase in interest rates would impact annual interest expense\n   by approximately INR 170 crore. The company uses inte..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.4644,
+          "rank": 5,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_12",
+      "question": "What is the size and composition of Globex Industries' outstanding order book as of March 31, 2024?",
+      "category": "Business strategy",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4461,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.75,
+        "citation_present": true,
+        "citation_validity": 0.8,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 34.56,
+        "generation_latency_ms": 0.36,
+        "total_latency_ms": 34.92
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"ORDER BOOK\n----------\nTotal outstanding order book as of March 31, 2024: INR 42,000 crore. Order book composition:\n- Renewable Energy: 45%\n- Highways\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 14] (score: 0.5299), [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 10] (score: 0.4784)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c4",
+          "chunk_index": 14,
+          "score": 0.5299,
+          "rank": 1,
+          "snippet": "crore, of which 72% is project\nfinance debt secured against specific assets and cash flows.\n\nDebt maturity profile:\n- Within 1 year: INR 4,200 crore (14.7%)\n- 1 to 3 years: INR 8,600 crore (30.2%)\n- 3..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.4784,
+          "rank": 2,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c5",
+          "chunk_index": 15,
+          "score": 0.4232,
+          "rank": 3,
+          "snippet": "is represents approximately 1.8 years of revenue visibility.\n\nOrder book composition:\n- Renewable Energy: 45%\n- Highways: 30%\n- Urban Infrastructure: 15%\n- Thermal Power (maintenance): 10%\n\nSUSTAINABI..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c0",
+          "chunk_index": 0,
+          "score": 0.422,
+          "rank": 4,
+          "snippet": "================================================================================\nACME CORPORATION \u2014 ANNUAL REPORT FY 2024\n==============================================================================..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c2",
+          "chunk_index": 12,
+          "score": 0.3772,
+          "rank": 5,
+          "snippet": "obex plans to add 3.0 GW of solar and\n   wind capacity by FY 2027, requiring a total investment of INR 18,000\n   crore. Financing will be through a mix of internal accruals (40%),\n   project finance d..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_13",
+      "question": "What is Initech Ltd's three lines of defence risk management framework?",
+      "category": "Risk disclosure",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5255,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.8,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 29.41,
+        "generation_latency_ms": 0.33,
+        "total_latency_ms": 29.74
+      },
+      "generated_answer": "According to initech_risk_disclosure_2024.txt (page 1):\n\"RISK MANAGEMENT FRAMEWORK\n--------------------------\nInitech's risk management framework is structured around three lines of\ndefence:\n\nFirst Line: Business units are responsible for identifying and managing\nrisks in their day-to-day operations. Second Line: The centralized Risk Management Department, headed by the\nChief Risk Officer (CRO), sets risk policies, defines risk appetite,\nmonitors risk exposures, and provides independent oversight. The CRO\nreports directly to the Board Risk Management Committee.\"\n\nSources cited: [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 19] (score: 0.7556), [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 18] (score: 0.5776)",
+      "citations": [
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c1",
+          "chunk_index": 19,
+          "score": 0.7556,
+          "rank": 1,
+          "snippet": "etail lending, micro-finance, and digital banking solutions. The company\noperates primarily in India with a network of 850 branches across\n18 states and 3 union territories.\n\nRISK MANAGEMENT FRAMEWORK..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c0",
+          "chunk_index": 18,
+          "score": 0.5776,
+          "rank": 2,
+          "snippet": "================================================================================\nINITECH LTD \u2014 RISK DISCLOSURE STATEMENT FY 2024\n=======================================================================..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c2",
+          "chunk_index": 20,
+          "score": 0.4664,
+          "rank": 3,
+          "snippet": "ndependent oversight. The CRO\nreports directly to the Board Risk Management Committee.\n\nThird Line: Internal Audit provides independent assurance on the\neffectiveness of risk management processes and ..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c3",
+          "chunk_index": 21,
+          "score": 0.4195,
+          "rank": 4,
+          "snippet": "Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no sing..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c5",
+          "chunk_index": 23,
+          "score": 0.4086,
+          "rank": 5,
+          "snippet": "----\nOperational risk includes the risk of loss resulting from inadequate\nor failed internal processes, people, systems, or external events.\n\nKey operational risk areas:\n\n1. TECHNOLOGY AND CYBER RISK:..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_14",
+      "question": "What are Initech's gross loan portfolio, GNPA, NNPA, and Provision Coverage Ratio?",
+      "category": "Risk disclosure",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4319,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.6,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 60.45,
+        "generation_latency_ms": 0.52,
+        "total_latency_ms": 60.98
+      },
+      "generated_answer": "According to initech_risk_disclosure_2024.txt (page 1):\n\"As of March 31, 2024:\n\n- Gross loan portfolio: INR 32,000 crore\n- Gross Non-Performing Assets (GNPA): INR 960 crore (3.0%)\n- Net Non-Performing Assets (NNPA): INR 384 crore (1.2%)\n- Provision Coverage Ratio (PCR): 68%\n- Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit und CREDIT RISK\n-----------\nCredit risk is the most significant risk for Initech given its lending\noperations.\"\n\nSources cited: [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 20] (score: 0.6914), [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 25] (score: 0.4225)",
+      "citations": [
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c2",
+          "chunk_index": 20,
+          "score": 0.6914,
+          "rank": 1,
+          "snippet": "ndependent oversight. The CRO\nreports directly to the Board Risk Management Committee.\n\nThird Line: Internal Audit provides independent assurance on the\neffectiveness of risk management processes and ..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c7",
+          "chunk_index": 25,
+          "score": 0.4225,
+          "rank": 2,
+          "snippet": "ct are ongoing operational risks. Succession\n   planning covers all CXO and CXO-1 positions.\n\nLIQUIDITY RISK\n--------------\nLiquidity risk is the risk that the company may not be able to meet\nits fina..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c3",
+          "chunk_index": 21,
+          "score": 0.415,
+          "rank": 3,
+          "snippet": "Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no sing..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.3278,
+          "rank": 4,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c4",
+          "chunk_index": 14,
+          "score": 0.3029,
+          "rank": 5,
+          "snippet": "crore, of which 72% is project\nfinance debt secured against specific assets and cash flows.\n\nDebt maturity profile:\n- Within 1 year: INR 4,200 crore (14.7%)\n- 1 to 3 years: INR 8,600 crore (30.2%)\n- 3..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_15",
+      "question": "What is Initech's Capital Adequacy Ratio compared to the regulatory minimum?",
+      "category": "Regulatory compliance",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.5047,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.6,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 30.02,
+        "generation_latency_ms": 0.33,
+        "total_latency_ms": 30.35
+      },
+      "generated_answer": "According to initech_risk_disclosure_2024.txt (page 1):\n\"Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no single borrower exceeding 2%\n  of total portfolio)\n- Sector-wise exposure limits\n- Regular portfolio stress testing under adverse macroeconomic scenarios\n- Early warning system for detecting signs of borrower distress\n\nMARKET RISK\n-----------\nMarket risk arises from adverse movements in interest rates, foreign\nexchange rates, and equity prices. Interest Rate Risk:\nInitech's asset-liability gap shows a negative duration gap of 0.8 years,\nmeaning the company is moderately exposed to rising interest rates.\"\n\nSources cited: [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 21] (score: 0.6891), [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 20] (score: 0.5843)",
+      "citations": [
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c3",
+          "chunk_index": 21,
+          "score": 0.6891,
+          "rank": 1,
+          "snippet": "Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no sing..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c2",
+          "chunk_index": 20,
+          "score": 0.5843,
+          "rank": 2,
+          "snippet": "ndependent oversight. The CRO\nreports directly to the Board Risk Management Committee.\n\nThird Line: Internal Audit provides independent assurance on the\neffectiveness of risk management processes and ..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c7",
+          "chunk_index": 25,
+          "score": 0.5241,
+          "rank": 3,
+          "snippet": "ct are ongoing operational risks. Succession\n   planning covers all CXO and CXO-1 positions.\n\nLIQUIDITY RISK\n--------------\nLiquidity risk is the risk that the company may not be able to meet\nits fina..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.3691,
+          "rank": 4,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c4",
+          "chunk_index": 14,
+          "score": 0.3568,
+          "rank": 5,
+          "snippet": "crore, of which 72% is project\nfinance debt secured against specific assets and cash flows.\n\nDebt maturity profile:\n- Within 1 year: INR 4,200 crore (14.7%)\n- 1 to 3 years: INR 8,600 crore (30.2%)\n- 3..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_16",
+      "question": "How does an interest rate increase of 100 basis points impact Initech's economic value of equity?",
+      "category": "Market risk",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6667,
+          "5": 0.4
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4232,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.6667,
+        "citation_present": true,
+        "citation_validity": 0.4,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 30.55,
+        "generation_latency_ms": 0.31,
+        "total_latency_ms": 30.86
+      },
+      "generated_answer": "According to initech_risk_disclosure_2024.txt (page 1):\n\"A\nparallel upward shift of 100 basis points in the yield curve would reduce\nthe economic valu Interest Rate Risk:\nInitech's asset-liability gap shows a negative duration gap of 0.8 years,\nmeaning the company is moderately exposed to rising interest rates. Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no single borrower exceeding 2%\n  of total portfolio)\n- Sector-wise exposure limits\n- Regular portfolio stress testing under adverse macroeconomic scenarios\n- Early warning system for detecting signs of borrower distress\n\nMARKET RISK\n-----------\nMarket risk arises from adverse movements in interest rates, foreign\nexchange rates, and equity prices.\"\n\nSources cited: [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 21] (score: 0.5543), [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 22] (score: 0.5199)",
+      "citations": [
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c3",
+          "chunk_index": 21,
+          "score": 0.5543,
+          "rank": 1,
+          "snippet": "Capital Adequacy Ratio (CAR): 18.2% (regulatory minimum: 15%)\n\nCredit risk is managed through:\n- Centralized credit underwriting with automated scoring models\n- Portfolio concentration limits (no sing..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c4",
+          "chunk_index": 22,
+          "score": 0.5199,
+          "rank": 2,
+          "snippet": "to rising interest rates. A\nparallel upward shift of 100 basis points in the yield curve would reduce\nthe economic value of equity by approximately INR 280 crore.\n\nThe company uses interest rate swaps..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c6",
+          "chunk_index": 16,
+          "score": 0.3926,
+          "rank": 3,
+          "snippet": ". INTEREST RATE RISK: With total debt of INR 28,500 crore, a 100 basis\n   point increase in interest rates would impact annual interest expense\n   by approximately INR 170 crore. The company uses inte..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.3292,
+          "rank": 4,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c1",
+          "chunk_index": 1,
+          "score": 0.3202,
+          "rank": 5,
+          "snippet": "ountries, with major operations in India, the United States,\nthe United Kingdom, and Singapore.\n\nFINANCIAL HIGHLIGHTS \u2014 FY 2024\n------------------------------\nTotal Revenue: INR 18,450 crore (USD 2.21..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_17",
+      "question": "What cybersecurity and technology safeguards are implemented by Initech Ltd?",
+      "category": "Cybersecurity risk",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4301,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": false,
+        "keyword_coverage": 0.0,
+        "citation_present": false,
+        "citation_validity": 0.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 26.05,
+        "generation_latency_ms": 0.31,
+        "total_latency_ms": 26.37
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    },
+    {
+      "sample_id": "eval_18",
+      "question": "How many fraudulent applications did Initech's AI fraud detection system flag in FY 2024, and what losses were prevented?",
+      "category": "Operational risk",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6667,
+          "5": 0.4
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4251,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 1
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": true,
+        "citation_validity": 0.4,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 27.98,
+        "generation_latency_ms": 0.33,
+        "total_latency_ms": 28.31
+      },
+      "generated_answer": "According to initech_risk_disclosure_2024.txt (page 1):\n\"The company deployed\n   an AI-based fraud detection system in FY 2024 that flagged 2,400\n   suspicious applications, of which 1,800 were confirmed fraudulent,\n   preventing estimated losses of INR 45 crore. y fraud, document forgery, and collusion. COMPLIANCE AND REGULATORY RISK: As a regulated financial institution,\n   Initech must comply with RBI regulations, SEBI requirements, and\n   various state-level regulations.\"\n\nSources cited: [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 24] (score: 0.6328), [Doc: initech_risk_disclosure_2024.txt, Page: 1, Chunk: 23] (score: 0.5700)",
+      "citations": [
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c6",
+          "chunk_index": 24,
+          "score": 0.6328,
+          "rank": 1,
+          "snippet": "y fraud, document forgery, and collusion. The company deployed\n   an AI-based fraud detection system in FY 2024 that flagged 2,400\n   suspicious applications, of which 1,800 were confirmed fraudulent,..."
+        },
+        {
+          "document_name": "initech_risk_disclosure_2024.txt",
+          "document_id": "227da7d4e8e428f2",
+          "page_number": 1,
+          "chunk_id": "227da7d4e8e428f2_p1_c5",
+          "chunk_index": 23,
+          "score": 0.57,
+          "rank": 2,
+          "snippet": "----\nOperational risk includes the risk of loss resulting from inadequate\nor failed internal processes, people, systems, or external events.\n\nKey operational risk areas:\n\n1. TECHNOLOGY AND CYBER RISK:..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c3",
+          "chunk_index": 3,
+          "score": 0.3106,
+          "rank": 3,
+          "snippet": "00 crore for delivery\nin FY 2025\u20132026.\n\nDigital Financial Services:\nRevenue of INR 4,350 crore (+15.8% YoY). The company's digital payments\nplatform processed 2.1 billion transactions during the year...."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c6",
+          "chunk_index": 6,
+          "score": 0.307,
+          "rank": 4,
+          "snippet": "CPA).\n   Non-compliance could result in significant penalties and reputational\n   damage.\n\n4. TECHNOLOGY OBSOLESCENCE RISK: Rapid technological change, particularly\n   in AI and cloud computing, requi..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.3053,
+          "rank": 5,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_19",
+      "question": "How do ACME Corporation and Globex Industries compare in terms of their debt-to-equity ratio?",
+      "category": "Cross-document comparison",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.4279,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 2
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.6667,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 34.22,
+        "generation_latency_ms": 0.37,
+        "total_latency_ms": 34.6
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"FINANCIAL SUMMARY \u2014 FY 2024\n----------------------------\nTotal Revenue: INR 22,800 crore (+18.3% YoY)\nEBITDA: INR 5,700 crore (25.0% margin)\nNet Profit: INR 2,280 crore (+22.5% YoY)\nTotal Debt: INR 28,500 crore\nDebt-to-Equity Ratio: 1.8x\nInterest Coverage Ratio: 3.2x\nReturn on Equity (ROE): 14.5%\n\nDEBT PROFILE AND CAPITAL STRUCTURE\n-----------------------------------\nGlobex has a total debt of INR 28,500 crore, of which 72% is project\nfinance debt secured against specific assets and cash flows. Debt maturity profile:\n- Wi\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 13] (score: 0.4809), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 2] (score: 0.4268)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.4809,
+          "rank": 1,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.4268,
+          "rank": 2,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c1",
+          "chunk_index": 11,
+          "score": 0.4124,
+          "rank": 3,
+          "snippet": "SITION AND COMPETITIVE ADVANTAGE\n------------------------------------------\nGlobex holds a 12% market share in India's renewable energy sector, making\nit the third-largest private renewable energy pro..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.412,
+          "rank": 4,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c1",
+          "chunk_index": 1,
+          "score": 0.4075,
+          "rank": 5,
+          "snippet": "ountries, with major operations in India, the United States,\nthe United Kingdom, and Singapore.\n\nFINANCIAL HIGHLIGHTS \u2014 FY 2024\n------------------------------\nTotal Revenue: INR 18,450 crore (USD 2.21..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_20",
+      "question": "What was the total revenue comparison between ACME Corporation and Globex Industries in FY 2024?",
+      "category": "Cross-document comparison",
+      "answerable": true,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "hit_rate_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0
+        },
+        "mrr": 1.0,
+        "avg_similarity_score": 0.515,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 2
+      },
+      "answer": {
+        "is_supported": true,
+        "answerability_correct": true,
+        "keyword_coverage": 0.0,
+        "citation_present": true,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 27.53,
+        "generation_latency_ms": 0.38,
+        "total_latency_ms": 27.91
+      },
+      "generated_answer": "According to globex_investor_presentation_2024.txt (page 1):\n\"================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n================================================================================\n[SYNTHETIC / DEMO DOCUMENT \u2014 For educational use only. Not a real company.]\n\nABOUT GLOBEX INDUSTRIES\n-----------------------\nGlobex Industries is a leading Indian infrastructure and energy company\nwith a market capitalization of approximately INR 95,000 crore. Globex is listed on both BSE and NSE, and is a constituent of the Nifty 50\nindex.\"\n\nSources cited: [Doc: globex_investor_presentation_2024.txt, Page: 1, Chunk: 10] (score: 0.5334), [Doc: acme_corp_annual_report_2024.txt, Page: 1, Chunk: 0] (score: 0.5220)",
+      "citations": [
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c0",
+          "chunk_index": 10,
+          "score": 0.5334,
+          "rank": 1,
+          "snippet": "================================================================================\nGLOBEX INDUSTRIES \u2014 INVESTOR PRESENTATION Q4 FY 2024\n==================================================================..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c0",
+          "chunk_index": 0,
+          "score": 0.522,
+          "rank": 2,
+          "snippet": "================================================================================\nACME CORPORATION \u2014 ANNUAL REPORT FY 2024\n==============================================================================..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c2",
+          "chunk_index": 2,
+          "score": 0.5129,
+          "rank": 3,
+          "snippet": "Equivalents: INR 4,200 crore as of March 31, 2024.\n\nTotal Debt: INR 2,800 crore, resulting in a net debt-to-equity ratio of 0.12.\n\nSEGMENT PERFORMANCE\n-------------------\nEnterprise Software Solutions..."
+        },
+        {
+          "document_name": "globex_investor_presentation_2024.txt",
+          "document_id": "3330d1344732c06b",
+          "page_number": 1,
+          "chunk_id": "3330d1344732c06b_p1_c3",
+          "chunk_index": 13,
+          "score": 0.5101,
+          "rank": 4,
+          "snippet": "50 km have been awarded in FY 2024,\n   with an aggregate project cost of INR 7,200 crore.\n\n4. URBAN INFRASTRUCTURE: The company has been selected as a preferred\n   bidder for metro rail projects in tw..."
+        },
+        {
+          "document_name": "acme_corp_annual_report_2024.txt",
+          "document_id": "d0e72cc4b66faa78",
+          "page_number": 1,
+          "chunk_id": "d0e72cc4b66faa78_p1_c7",
+          "chunk_index": 7,
+          "score": 0.4965,
+          "rank": 5,
+          "snippet": "24. Loss of any major client could materially impact\n   revenue.\n\n7. TALENT ATTRITION RISK: The technology industry faces high employee\n   turnover rates. ACME's attrition rate was 16.2% in FY 2024, d..."
+        }
+      ]
+    },
+    {
+      "sample_id": "eval_21",
+      "question": "What is the launch date of ACME Corporation's commercial spacecraft mission to Mars?",
+      "category": "Unsupported questions",
+      "answerable": false,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "hit_rate_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "mrr": 0.0,
+        "avg_similarity_score": 0.0,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 0
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": false,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 29.08,
+        "generation_latency_ms": 0.46,
+        "total_latency_ms": 29.54
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    },
+    {
+      "sample_id": "eval_22",
+      "question": "How many Bitcoin and Ethereum tokens does Globex Industries hold in its corporate treasury?",
+      "category": "Unsupported questions",
+      "answerable": false,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "hit_rate_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "mrr": 0.0,
+        "avg_similarity_score": 0.0,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 0
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": false,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 30.95,
+        "generation_latency_ms": 0.49,
+        "total_latency_ms": 31.43
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    },
+    {
+      "sample_id": "eval_23",
+      "question": "What is the name and manufacturer of Initech's CEO personal luxury yacht docked in Monaco?",
+      "category": "Unsupported questions",
+      "answerable": false,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "hit_rate_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "mrr": 0.0,
+        "avg_similarity_score": 0.0,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 0
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": false,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 30.18,
+        "generation_latency_ms": 0.33,
+        "total_latency_ms": 30.51
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    },
+    {
+      "sample_id": "eval_24",
+      "question": "What is the projected stock price target for ACME Corporation on the National Stock Exchange for December 2030?",
+      "category": "Unsupported questions",
+      "answerable": false,
+      "retrieval": {
+        "k_values": [
+          1,
+          3,
+          5
+        ],
+        "recall_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "hit_rate_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0
+        },
+        "mrr": 0.0,
+        "avg_similarity_score": 0.0,
+        "retrieved_count": 5,
+        "relevant_retrieved_count": 0
+      },
+      "answer": {
+        "is_supported": false,
+        "answerability_correct": true,
+        "keyword_coverage": 1.0,
+        "citation_present": false,
+        "citation_validity": 1.0,
+        "grounded_in_context": true,
+        "retrieval_latency_ms": 29.46,
+        "generation_latency_ms": 0.41,
+        "total_latency_ms": 29.87
+      },
+      "generated_answer": "Based on the provided documents, there is insufficient information to answer this question.",
+      "citations": []
+    }
+  ]
+}

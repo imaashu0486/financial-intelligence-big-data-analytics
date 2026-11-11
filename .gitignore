@@ -1,0 +1,85 @@
+# ==============================================================================
+# Financial Intelligence & Big Data Analytics Platform — .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Raw large external datasets (processed and sample datasets are tracked)
+data/raw/*.csv
+data/raw/*.parquet
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs & Temporary files
+logs/
+*.log
+*.tmp
+test_st_*.txt
+
+# Build / Distribution
+dist/
+build/
+docker/cluster/dist/
+*.tar.gz
+*.tgz
+*.egg-info/
+
+# Spark / Hadoop runtime logs and metastore
+derby.log
+metastore_db/
+spark-warehouse/
+hadoop/
+
+# Keep sample, processed, documents, evaluation, models, vectorstore, and real data tracked
+!data/sample/
+!data/processed/
+!data/documents/
+!data/evaluation/
+!data/models/
+!data/vectorstore/
+!data/real/
+
+# Exclude oversized consolidated CSV and redundant daily CSV splits (Parquet equivalents are tracked)
+data/real/processed/market/consolidated_market_features.csv
+data/real/processed/market/daily_features/*.csv
+
+# Temporary scratch directory
+scratch/
+

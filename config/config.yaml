@@ -1,0 +1,151 @@
+# =============================================================
+# Financial Intelligence & Stock Analytics Platform
+# Configuration
+# =============================================================
+
+project:
+  name: "Financial Intelligence & Stock Analytics Platform"
+  version: "0.1.0"
+
+# ── Stock Symbols (Indian market for sample data) ────────────
+symbols:
+  - RELIANCE
+  - TCS
+  - INFY
+  - HDFCBANK
+  - ICICIBANK
+  - WIPRO
+  - SBIN
+  - BAJFINANCE
+  - BHARTIARTL
+  - LT
+
+# ── File Paths ───────────────────────────────────────────────
+paths:
+  raw_market: "data/raw/market_data.csv"
+  raw_news: "data/raw/financial_news.csv"
+  sample_market: "data/sample/market_data.csv"
+  sample_news: "data/sample/financial_news.csv"
+  processed_market: "data/processed/market_features.csv"
+  processed_news: "data/processed/news_cleaned.csv"
+  documents_dir: "data/documents"
+  log_dir: "logs"
+
+# ── Feature Engineering Parameters ───────────────────────────
+features:
+  moving_averages: [7, 20, 50]
+  rsi_period: 14
+  macd:
+    fast: 12
+    slow: 26
+    signal: 9
+  volatility_window: 20
+  min_periods: 1          # rolling window min_periods for early rows
+
+# ── Cleaning Parameters ─────────────────────────────────────
+cleaning:
+  max_price: 500000       # ₹ sanity cap
+  min_price: 0.01
+  max_volume: 5000000000  # 500 crore shares
+  outlier_zscore: 3.5     # flag returns beyond this z-score
+  forward_fill_limit: 5   # max consecutive NaN to forward-fill
+
+# ── Sample Data Generation ───────────────────────────────────
+sample_data:
+  start_date: "2022-01-01"
+  end_date: "2023-12-31"
+  news_count: 500
+  seed: 42
+
+# ── Spark Configuration (Phase 2) ───────────────────────────
+spark:
+  app_name: "FinancialAnalytics"
+  master: "local[*]"                # local mode; change to yarn/mesos for cluster
+  output_path: "data/processed/spark"
+
+# ── HDFS Configuration (Phase 2) ────────────────────────────
+hdfs:
+  namenode: "hdfs://localhost:9000"
+  project_root: "/financial_analytics"
+  raw_path: "/financial_analytics/raw"
+  processed_path: "/financial_analytics/processed"
+
+# ── MapReduce Configuration (Phase 2) ───────────────────────
+mapreduce:
+  output_path: "data/processed/mapreduce"
+
+# ── MongoDB Configuration (Phase 3) ─────────────────────────
+mongodb:
+  uri: "mongodb://localhost:27017"
+  database: "financial_analytics"
+  timeout_ms: 5000
+  collections:
+    market_data: "market_data"
+    news: "news"
+    stock_features: "stock_features"
+    predictions: "predictions"
+    sentiment: "sentiment"
+    association_rules: "association_rules"
+    rag_documents: "rag_documents"
+    rag_queries: "rag_queries"
+
+# ── Machine Learning Configuration (Phase 4) ────────────────
+ml:
+  train_size: 0.70
+  validation_size: 0.15
+  test_size: 0.15
+  classification_threshold: 0.005
+  random_state: 42
+  models_path: "data/models"
+  output_path: "data/processed/ml"
+  clustering:
+    min_k: 2
+    max_k: 6
+    default_k: 3
+  features:
+    - daily_return
+    - log_return
+    - ma_7
+    - ma_20
+    - ma_50
+    - volatility
+    - volume_change
+    - rsi_14
+    - macd
+    - macd_signal
+
+# ── Sentiment Analysis Configuration (Phase 5) ──────────────
+sentiment:
+  model_name: "ProsusAI/finbert"
+  fallback_model: "financial_lexicon"
+  use_finbert: false          # set True to use FinBERT via transformers if weights are available
+  batch_size: 32
+  max_length: 512
+  output_path: "data/processed/sentiment"
+  neutral_threshold: 0.15
+
+# ── Association Rule Mining Configuration (Phase 6) ──────────
+association:
+  return_threshold: 0.01      # min daily return for a stock to be in a transaction
+  min_support: 0.05           # Apriori min support
+  min_confidence: 0.30        # min confidence for association rules
+  min_lift: 1.0               # min lift for association rules
+  max_itemset_size: 4         # max items in a frequent itemset
+  output_path: "data/processed/association"
+
+# ── RAG Configuration (Phase 7) ─────────────────────────────
+rag:
+  documents_dir: "data/documents"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  embedding_mode: "auto"          # auto | mock | sentence-transformer
+  embedding_batch_size: 32
+  embedding_dimension: 384
+  chunk_size: 800                  # characters
+  chunk_overlap: 120               # characters
+  top_k: 5
+  min_similarity: 0.3
+  reranking_enabled: true
+  rerank_alpha: 0.5
+  generator_mode: "extractive"     # extractive | mock
+  vectorstore_dir: "data/vectorstore"
+  output_path: "data/processed/rag"

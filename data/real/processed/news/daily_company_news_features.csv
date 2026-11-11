@@ -1,0 +1,79 @@
+date,ticker,company_name,daily_news_count,official_disclosure_count,news_report_count,earnings_release_count
+2024-01-05,NESTLEIND,Nestle India Limited,1,1,0,0
+2024-01-08,ONGC,Oil & Natural Gas Corporation Limited,1,1,0,0
+2024-01-10,ICICIBANK,ICICI Bank Limited,1,0,1,0
+2024-01-12,TATACONSUM,Tata Consumer Products Limited,1,1,0,0
+2024-01-16,TECHM,Tech Mahindra Limited,1,0,1,0
+2024-01-17,SBIN,State Bank of India,1,1,0,0
+2024-01-18,SUNPHARMA,Sun Pharmaceutical Industries Limited,1,1,0,0
+2024-01-19,RELIANCE,Reliance Industries Limited,1,0,0,1
+2024-01-20,RELIANCE,Reliance Industries Limited,1,1,0,0
+2024-01-22,ASIANPAINT,Asian Paints Limited,1,1,0,0
+2024-01-24,MARUTI,Maruti Suzuki India Limited,1,1,0,0
+2024-02-01,BHARTIARTL,Bharti Airtel Limited,1,0,1,0
+2024-02-05,BAJAJFINSV,Bajaj Finserv Limited,1,1,0,0
+2024-02-06,INFY,Infosys Limited,1,1,0,0
+2024-02-07,ONGC,Oil & Natural Gas Corporation Limited,1,1,0,0
+2024-02-09,APOLLOHOSP,Apollo Hospitals Enterprise Limited,1,0,1,0
+2024-02-12,TITAN,Titan Company Limited,1,1,0,0
+2024-02-13,JSWSTEEL,JSW Steel Limited,1,1,0,0
+2024-02-14,TCS,Tata Consultancy Services Limited,1,1,0,0
+2024-02-15,HDFCBANK,HDFC Bank Limited,1,1,0,0
+2024-02-16,BRITANNIA,Britannia Industries Limited,1,0,1,0
+2024-02-19,POWERGRID,Power Grid Corporation of India Limited,1,1,0,0
+2024-02-20,HINDALCO,Hindalco Industries Limited,1,1,0,0
+2024-02-22,HCLTECH,HCL Technologies Limited,1,0,1,0
+2024-02-23,GRASIM,Grasim Industries Limited,1,1,0,0
+2024-02-27,HEROMOTOCO,Hero MotoCorp Limited,1,0,1,0
+2024-02-28,ITC,ITC Limited,1,0,1,0
+2024-03-01,LT,Larsen & Toubro Limited,1,1,0,0
+2024-03-04,TATAMOTORS,Tata Motors Limited,1,1,0,0
+2024-03-05,INFY,Infosys Limited,1,1,0,0
+2024-03-08,CIPLA,Cipla Limited,1,1,0,0
+2024-03-12,RELIANCE,Reliance Industries Limited,1,0,1,0
+2024-03-14,HINDUNILVR,Hindustan Unilever Limited,1,0,1,0
+2024-03-15,M&M,Mahindra & Mahindra Limited,1,1,0,0
+2024-03-18,BHARTIARTL,Bharti Airtel Limited,1,1,0,0
+2024-03-19,DIVISLAB,Divi's Laboratories Limited,1,0,1,0
+2024-03-22,SHREECEM,Shree Cement Limited,1,1,0,0
+2024-03-25,ADANIPORTS,Adani Ports and Special Economic Zone Limited,1,1,0,0
+2024-03-25,HDFCBANK,HDFC Bank Limited,1,0,1,0
+2024-03-26,BEL,Bharat Electronics Limited,1,1,0,0
+2024-03-27,DRREDDY,Dr. Reddy's Laboratories Limited,1,1,0,0
+2024-03-28,KOTAKBANK,Kotak Mahindra Bank Limited,1,1,0,0
+2024-03-29,ADANIENT,Adani Enterprises Limited,1,1,0,0
+2024-03-31,NTPC,NTPC Limited,1,0,1,0
+2024-04-01,COALINDIA,Coal India Limited,1,0,1,0
+2024-04-01,EICHERMOT,Eicher Motors Limited,1,0,1,0
+2024-04-01,M&M,Mahindra & Mahindra Limited,1,0,1,0
+2024-04-01,MARUTI,Maruti Suzuki India Limited,1,0,1,0
+2024-04-02,ADANIPORTS,Adani Ports and Special Economic Zone Limited,1,0,1,0
+2024-04-02,ULTRACEMCO,UltraTech Cement Limited,1,0,1,0
+2024-04-03,LT,Larsen & Toubro Limited,1,0,1,0
+2024-04-05,TITAN,Titan Company Limited,1,0,1,0
+2024-04-06,WIPRO,Wipro Limited,1,1,0,0
+2024-04-08,HCLTECH,HCL Technologies Limited,1,1,0,0
+2024-04-10,BPCL,Bharat Petroleum Corporation Limited,1,1,0,0
+2024-04-12,TCS,Tata Consultancy Services Limited,2,0,1,1
+2024-04-18,INFY,Infosys Limited,1,0,0,1
+2024-04-20,HDFCBANK,HDFC Bank Limited,1,0,0,1
+2024-04-24,AXISBANK,Axis Bank Limited,1,0,0,1
+2024-04-25,BAJFINANCE,Bajaj Finance Limited,1,0,0,1
+2024-04-26,SBILIFE,SBI Life Insurance Company Limited,1,0,0,1
+2024-04-27,ICICIBANK,ICICI Bank Limited,1,0,0,1
+2024-04-29,TRENT,Trent Limited,1,0,0,1
+2024-05-02,BAJFINANCE,Bajaj Finance Limited,1,1,0,0
+2024-05-04,KOTAKBANK,Kotak Mahindra Bank Limited,1,0,1,0
+2024-05-09,SBIN,State Bank of India,1,0,0,1
+2024-05-10,TATAMOTORS,Tata Motors Limited,1,0,0,1
+2024-05-16,HDFCLIFE,HDFC Life Insurance Company Limited,1,1,0,0
+2024-05-22,POWERGRID,Power Grid Corporation of India Limited,1,1,0,0
+2024-06-06,ITC,ITC Limited,1,1,0,0
+2024-07-05,BAJAJ-AUTO,Bajaj Auto Limited,1,1,0,0
+2024-07-15,AXISBANK,Axis Bank Limited,1,1,0,0
+2024-07-15,HINDUNILVR,Hindustan Unilever Limited,1,1,0,0
+2024-07-26,SUNPHARMA,Sun Pharmaceutical Industries Limited,1,0,1,0
+2024-07-28,ULTRACEMCO,UltraTech Cement Limited,1,1,0,0
+2024-09-11,TATASTEEL,Tata Steel Limited,1,1,0,0
+2024-09-18,NTPC,NTPC Limited,1,1,0,0
+2024-10-15,ADANIENT,Adani Enterprises Limited,1,1,0,0

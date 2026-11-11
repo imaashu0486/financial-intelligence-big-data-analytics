@@ -1,0 +1,173 @@
+{
+  "correlations": {
+    "same_day_correlation": {
+      "pearson": -0.0232,
+      "p_value": 0.616132,
+      "spearman": -0.0101,
+      "spearman_p_value": 0.82751,
+      "sample_size": 468,
+      "statistically_significant": false
+    },
+    "next_day_correlation": {
+      "pearson": 0.0088,
+      "p_value": 0.849868,
+      "spearman": 0.0131,
+      "spearman_p_value": 0.777828,
+      "sample_size": 468,
+      "statistically_significant": false
+    },
+    "disclaimer": "Statistical association between sentiment scores and asset returns does not constitute evidence of causal influence or financial market predictability."
+  },
+  "regime_statistics": {
+    "Positive": {
+      "day_count": 165,
+      "same_day_return": {
+        "mean": 0.000142,
+        "std": 0.014926,
+        "median": -0.000452,
+        "win_rate": 0.4878
+      },
+      "next_day_return": {
+        "mean": 0.001564,
+        "std": 0.015454,
+        "median": 0.002866,
+        "win_rate": 0.5697
+      }
+    },
+    "Neutral": {
+      "day_count": 216,
+      "same_day_return": {
+        "mean": 0.000599,
+        "std": 0.0145,
+        "median": 0.000289,
+        "win_rate": 0.5093
+      },
+      "next_day_return": {
+        "mean": 0.00061,
+        "std": 0.013968,
+        "median": 0.000168,
+        "win_rate": 0.507
+      }
+    },
+    "Negative": {
+      "day_count": 88,
+      "same_day_return": {
+        "mean": 9e-06,
+        "std": 0.014266,
+        "median": -0.000252,
+        "win_rate": 0.4886
+      },
+      "next_day_return": {
+        "mean": 0.001572,
+        "std": 0.014477,
+        "median": 0.002188,
+        "win_rate": 0.5341
+      }
+    }
+  },
+  "stock_breakdown": [
+    {
+      "symbol": "INFY",
+      "total_articles": 62,
+      "positive_count": 18,
+      "neutral_count": 30,
+      "negative_count": 14,
+      "mean_sentiment": 0.0435,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "SBIN",
+      "total_articles": 61,
+      "positive_count": 22,
+      "neutral_count": 27,
+      "negative_count": 12,
+      "mean_sentiment": 0.0743,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "WIPRO",
+      "total_articles": 59,
+      "positive_count": 21,
+      "neutral_count": 30,
+      "negative_count": 8,
+      "mean_sentiment": 0.1301,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "total_articles": 57,
+      "positive_count": 27,
+      "neutral_count": 22,
+      "negative_count": 8,
+      "mean_sentiment": 0.1973,
+      "dominant_regime": "Positive"
+    },
+    {
+      "symbol": "TCS",
+      "total_articles": 55,
+      "positive_count": 13,
+      "neutral_count": 30,
+      "negative_count": 12,
+      "mean_sentiment": 0.0028,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "total_articles": 55,
+      "positive_count": 24,
+      "neutral_count": 20,
+      "negative_count": 11,
+      "mean_sentiment": 0.136,
+      "dominant_regime": "Positive"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "total_articles": 44,
+      "positive_count": 14,
+      "neutral_count": 22,
+      "negative_count": 8,
+      "mean_sentiment": 0.0849,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "total_articles": 38,
+      "positive_count": 10,
+      "neutral_count": 20,
+      "negative_count": 8,
+      "mean_sentiment": 0.0642,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "LT",
+      "total_articles": 37,
+      "positive_count": 11,
+      "neutral_count": 18,
+      "negative_count": 8,
+      "mean_sentiment": 0.0574,
+      "dominant_regime": "Neutral"
+    },
+    {
+      "symbol": "RELIANCE",
+      "total_articles": 32,
+      "positive_count": 14,
+      "neutral_count": 14,
+      "negative_count": 4,
+      "mean_sentiment": 0.1935,
+      "dominant_regime": "Neutral"
+    }
+  ],
+  "sentiment_distribution": {
+    "Neutral": 233,
+    "Positive": 174,
+    "Negative": 93
+  },
+  "pipeline_config": {
+    "model": "financial_lexicon",
+    "neutral_threshold": 0.15,
+    "source": "processed",
+    "total_articles": 500,
+    "total_daily_records": 469,
+    "total_joined_records": 469
+  }
+}

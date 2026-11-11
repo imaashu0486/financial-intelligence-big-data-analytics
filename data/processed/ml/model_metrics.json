@@ -1,0 +1,279 @@
+{
+  "regression": {
+    "zero_return_baseline": {
+      "mae": 0.011742,
+      "rmse": 0.015308,
+      "r2": -0.000553,
+      "model": "zero_return_baseline"
+    },
+    "linear_regression": {
+      "mae": 0.011802,
+      "rmse": 0.015479,
+      "r2": -0.02305,
+      "model": "linear_regression"
+    },
+    "random_forest_regressor": {
+      "mae": 0.012074,
+      "rmse": 0.015843,
+      "r2": -0.071682,
+      "model": "random_forest_regressor"
+    }
+  },
+  "classification": {
+    "majority_class_baseline": {
+      "accuracy": 0.3459,
+      "precision_macro": 0.1153,
+      "recall_macro": 0.3333,
+      "f1_macro": 0.1714,
+      "precision_weighted": 0.1197,
+      "recall_weighted": 0.3459,
+      "f1_weighted": 0.1778,
+      "confusion_matrix": [
+        [
+          256,
+          0,
+          0
+        ],
+        [
+          196,
+          0,
+          0
+        ],
+        [
+          288,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "Bearish",
+        "Neutral",
+        "Bullish"
+      ],
+      "classification_report": {
+        "Bearish": {
+          "precision": 0.34594594594594597,
+          "recall": 1.0,
+          "f1-score": 0.5140562248995983,
+          "support": 256.0
+        },
+        "Neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 196.0
+        },
+        "Bullish": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 288.0
+        },
+        "accuracy": 0.34594594594594597,
+        "macro avg": {
+          "precision": 0.11531531531531532,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.1713520749665328,
+          "support": 740.0
+        },
+        "weighted avg": {
+          "precision": 0.11967859751643536,
+          "recall": 0.34594594594594597,
+          "f1-score": 0.17783566699229347,
+          "support": 740.0
+        }
+      },
+      "model": "majority_class_baseline",
+      "majority_class": "Bearish"
+    },
+    "logistic_regression": {
+      "accuracy": 0.3473,
+      "precision_macro": 0.3407,
+      "recall_macro": 0.3406,
+      "f1_macro": 0.3406,
+      "precision_weighted": 0.3483,
+      "recall_weighted": 0.3473,
+      "f1_weighted": 0.3477,
+      "confusion_matrix": [
+        [
+          92,
+          68,
+          96
+        ],
+        [
+          70,
+          55,
+          71
+        ],
+        [
+          102,
+          76,
+          110
+        ]
+      ],
+      "labels": [
+        "Bearish",
+        "Neutral",
+        "Bullish"
+      ],
+      "classification_report": {
+        "Bearish": {
+          "precision": 0.3484848484848485,
+          "recall": 0.359375,
+          "f1-score": 0.35384615384615387,
+          "support": 256.0
+        },
+        "Neutral": {
+          "precision": 0.27638190954773867,
+          "recall": 0.28061224489795916,
+          "f1-score": 0.27848101265822783,
+          "support": 196.0
+        },
+        "Bullish": {
+          "precision": 0.3971119133574007,
+          "recall": 0.3819444444444444,
+          "f1-score": 0.3893805309734513,
+          "support": 288.0
+        },
+        "accuracy": 0.3472972972972973,
+        "macro avg": {
+          "precision": 0.34065955712999596,
+          "recall": 0.34064389644746784,
+          "f1-score": 0.340569232492611,
+          "support": 740.0
+        },
+        "weighted avg": {
+          "precision": 0.34831244125731,
+          "recall": 0.3472972972972973,
+          "f1-score": 0.3477141713324082,
+          "support": 740.0
+        }
+      },
+      "model": "logistic_regression"
+    },
+    "random_forest_classifier": {
+      "accuracy": 0.3743,
+      "precision_macro": 0.3679,
+      "recall_macro": 0.3675,
+      "f1_macro": 0.3672,
+      "precision_weighted": 0.3777,
+      "recall_weighted": 0.3743,
+      "f1_weighted": 0.3756,
+      "confusion_matrix": [
+        [
+          91,
+          76,
+          89
+        ],
+        [
+          62,
+          62,
+          72
+        ],
+        [
+          83,
+          81,
+          124
+        ]
+      ],
+      "labels": [
+        "Bearish",
+        "Neutral",
+        "Bullish"
+      ],
+      "classification_report": {
+        "Bearish": {
+          "precision": 0.3855932203389831,
+          "recall": 0.35546875,
+          "f1-score": 0.3699186991869919,
+          "support": 256.0
+        },
+        "Neutral": {
+          "precision": 0.2831050228310502,
+          "recall": 0.3163265306122449,
+          "f1-score": 0.2987951807228916,
+          "support": 196.0
+        },
+        "Bullish": {
+          "precision": 0.43508771929824563,
+          "recall": 0.4305555555555556,
+          "f1-score": 0.4328097731239092,
+          "support": 288.0
+        },
+        "accuracy": 0.37432432432432433,
+        "macro avg": {
+          "precision": 0.36792865415609294,
+          "recall": 0.36745027872260017,
+          "f1-score": 0.3671745510112642,
+          "support": 740.0
+        },
+        "weighted avg": {
+          "precision": 0.3777104216750814,
+          "recall": 0.37432432432432433,
+          "f1-score": 0.37555710415303045,
+          "support": 740.0
+        }
+      },
+      "model": "random_forest_classifier"
+    }
+  },
+  "clustering": {
+    "k_evaluated": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "inertias": [
+      28.5579,
+      19.025,
+      12.3107,
+      7.8848,
+      5.2421
+    ],
+    "silhouette_scores": [
+      0.2845,
+      0.2693,
+      0.2587,
+      0.2618,
+      0.2307
+    ],
+    "chosen_k": 3,
+    "cluster_profiles": [
+      {
+        "cluster": 0,
+        "avg_daily_return": 0.0006857499999999999,
+        "avg_volatility": 0.012127,
+        "avg_volume": 3277299.71,
+        "max_drawdown": -0.20197199999999998,
+        "return_risk_ratio": 0.05649975,
+        "stock_count": 4,
+        "symbols": "BHARTIARTL, HDFCBANK, LT, TCS",
+        "characterization": "Cluster 0: Moderate Volatility, Positive Mean Daily Return (0.0007), Max DD (-20.20%)"
+      },
+      {
+        "cluster": 1,
+        "avg_daily_return": -0.000214,
+        "avg_volatility": 0.0150398,
+        "avg_volume": 3226657.0039999997,
+        "max_drawdown": -0.3966424,
+        "return_risk_ratio": -0.015336800000000001,
+        "stock_count": 5,
+        "symbols": "ICICIBANK, INFY, RELIANCE, SBIN, WIPRO",
+        "characterization": "Cluster 1: High Volatility, Negative Mean Daily Return (-0.0002), Max DD (-39.66%)"
+      },
+      {
+        "cluster": 2,
+        "avg_daily_return": 0.001065,
+        "avg_volatility": 0.019564,
+        "avg_volume": 3096503.23,
+        "max_drawdown": -0.269671,
+        "return_risk_ratio": 0.054459,
+        "stock_count": 1,
+        "symbols": "BAJFINANCE",
+        "characterization": "Cluster 2: High Volatility, Positive Mean Daily Return (0.0011), Max DD (-26.97%)"
+      }
+    ]
+  }
+}

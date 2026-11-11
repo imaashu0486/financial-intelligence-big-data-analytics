@@ -1,0 +1,88 @@
+{
+  "execution_timestamp": "2026-11-09T13:46:58Z",
+  "pipeline_version": "1.0.0",
+  "market": {
+    "consolidated_parquet": "data\\real\\processed\\market\\consolidated_market_features.parquet",
+    "consolidated_sha256": "222da866bb06e0ae140b5e439618c623e0a2d65335b15a46ab0f3520b7100d5d",
+    "benchmark_parquet": "data\\real\\processed\\market\\benchmark_features.parquet",
+    "benchmark_sha256": "654af8bfc115415511bc4877d04c3a1dc9c435c05e5100cc4ae8e0820388a0a0",
+    "total_rows": 121962,
+    "instruments_count": 50
+  },
+  "news": {
+    "cleaned_news_path": "data\\real\\processed\\news\\cleaned_financial_news.csv",
+    "cleaned_news_sha256": "1e732e8f9a84f3abb08eff73f8ef2437640a8cef7d5e2f9f8e35f4cfe74bc80a",
+    "cleaned_news_rows": 79,
+    "daily_news_features_path": "data\\real\\processed\\news\\daily_company_news_features.csv",
+    "daily_news_features_sha256": "fa0ab10279968204a6ecae655cf3175a6cbbce74dac1ef082e637035d3a99ce4",
+    "daily_news_features_rows": 78,
+    "companies_covered_2024": 50
+  },
+  "documents": {
+    "output_directory": "data\\real\\processed\\documents\\cleaned_corporate_documents",
+    "total_documents": 4,
+    "documents": [
+      {
+        "document_id": "c462d32d04121c25",
+        "original_filename": "HDFCBANK_Annual_Report_FY24_Financial_Disclosures.txt",
+        "cleaned_filename": "HDFCBANK_clean_executive_overview_Financial_Disclosures.txt",
+        "filepath": "data\\real\\processed\\documents\\cleaned_corporate_documents\\HDFCBANK_clean_executive_overview_Financial_Disclosures.txt",
+        "ticker": "HDFCBANK",
+        "reporting_year": "FY 2023-24",
+        "source": "Official HDFCBANK FY24 Integrated Annual Report MD&A Disclosures (Executive Summary)",
+        "word_count": 310,
+        "character_count": 2117,
+        "text_extraction_status": "SUCCESS",
+        "document_completeness_classification": "Curated Executive MD&A / Strategic Overview Disclosure",
+        "is_statutory_complete_annual_report": false,
+        "sha256": "846ce26872e68f1ac30654da56db55c2afb4d6d9ac83893bbcc7d79523f0daa9"
+      },
+      {
+        "document_id": "98fb4519ae54967b",
+        "original_filename": "INFY_Annual_Report_FY24_Governance_and_Strategy.txt",
+        "cleaned_filename": "INFY_clean_executive_overview_Governance_and_Strategy.txt",
+        "filepath": "data\\real\\processed\\documents\\cleaned_corporate_documents\\INFY_clean_executive_overview_Governance_and_Strategy.txt",
+        "ticker": "INFY",
+        "reporting_year": "FY 2023-24",
+        "source": "Official INFY FY24 Integrated Annual Report MD&A Disclosures (Executive Summary)",
+        "word_count": 308,
+        "character_count": 2132,
+        "text_extraction_status": "SUCCESS",
+        "document_completeness_classification": "Curated Executive MD&A / Strategic Overview Disclosure",
+        "is_statutory_complete_annual_report": false,
+        "sha256": "f30b492a2cb74b5adb0ef6766cf538bfb4cc0da64aa3f33b32d4148c3791eebe"
+      },
+      {
+        "document_id": "32f9621f82e85c50",
+        "original_filename": "RELIANCE_Annual_Report_FY24_Strategic_Overview.txt",
+        "cleaned_filename": "RELIANCE_clean_executive_overview_Strategic_Overview.txt",
+        "filepath": "data\\real\\processed\\documents\\cleaned_corporate_documents\\RELIANCE_clean_executive_overview_Strategic_Overview.txt",
+        "ticker": "RELIANCE",
+        "reporting_year": "FY 2023-24",
+        "source": "Official RELIANCE FY24 Integrated Annual Report MD&A Disclosures (Executive Summary)",
+        "word_count": 380,
+        "character_count": 2646,
+        "text_extraction_status": "SUCCESS",
+        "document_completeness_classification": "Curated Executive MD&A / Strategic Overview Disclosure",
+        "is_statutory_complete_annual_report": false,
+        "sha256": "08d08b8ddeecb6bb3d140603042d6f6ba42c489332a8ac7004edd753935ee0d4"
+      },
+      {
+        "document_id": "a72e5ccf01f65252",
+        "original_filename": "TCS_Annual_Report_FY24_Business_Review.txt",
+        "cleaned_filename": "TCS_clean_executive_overview_Business_Review.txt",
+        "filepath": "data\\real\\processed\\documents\\cleaned_corporate_documents\\TCS_clean_executive_overview_Business_Review.txt",
+        "ticker": "TCS",
+        "reporting_year": "FY 2023-24",
+        "source": "Official TCS FY24 Integrated Annual Report MD&A Disclosures (Executive Summary)",
+        "word_count": 328,
+        "character_count": 2337,
+        "text_extraction_status": "SUCCESS",
+        "document_completeness_classification": "Curated Executive MD&A / Strategic Overview Disclosure",
+        "is_statutory_complete_annual_report": false,
+        "sha256": "afcdf076369e49c8fb38be998d5bf19c7836e9d04cd31593d8ab99ea983c5a1d"
+      }
+    ]
+  },
+  "quality_report": "data\\real\\metadata\\feature_quality_report.json"
+}

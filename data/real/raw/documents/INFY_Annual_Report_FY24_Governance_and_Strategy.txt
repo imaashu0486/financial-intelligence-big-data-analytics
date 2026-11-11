@@ -1,0 +1,25 @@
+INFOSYS LIMITED
+ANNUAL REPORT 2023-24
+STRATEGY, CORPORATE GOVERNANCE AND FINANCIAL SUMMARY
+
+1. Overview of Financial Performance
+For the fiscal year ended March 31, 2024, Infosys delivered revenues of Rs 153,670 crore (US$ 18.56 billion), an increase of 4.7% in rupee terms and 1.4% in constant currency terms. Operating profit stood at Rs 31,661 crore with operating margin of 20.7%. Free cash flow generation was exceptional at Rs 23,230 crore (US$ 2.8 billion), an increase of 13.7% over the previous fiscal.
+
+Total dividend per share for FY 2024 was Rs 46, including a special dividend of Rs 8 per share, returning 85% of free cash flow to shareholders.
+
+2. Large Deals and Generative AI Adoption
+Infosys closed record large contract deals with Total Contract Value (TCV) of US$ 17.7 billion in FY 2024, of which 52% represented net new business.
+- Infosys Topaz: Rolled out across more than 300 enterprise clients, providing enterprise-grade cognitive AI models, fine-tuned domain transformers, and autonomous AI agents.
+- Infosys Cobalt: Expanded cloud transformation suites with over 35,000 cloud assets and 300 industry-specific cloud blueprints.
+
+3. Geographic and Industry Segment Performance
+- North America: Accounted for 59.6% of total revenue.
+- Europe: Generated 27.5% of total revenue, posting 6.5% constant currency expansion.
+- Financial Services: Represented 27.8% of total revenue.
+- Manufacturing and Energy Utilities: Posted strong double-digit growth, contributing 14.8% and 13.2% respectively.
+
+4. Environmental, Social, and Governance (ESG) Milestones
+Infosys continued to operate as carbon neutral across Scope 1, Scope 2, and business travel Scope 3 emissions for the fifth consecutive year. Renewable energy supplied 67.4% of total electricity consumed across Infosys development campuses in India.
+
+5. Risk Identification & Mitigation
+Key risks include rapid technological obsolescence requiring continuous talent reskilling, high client concentration in BFSI and telecom verticals in the United States, cybersecurity threats against customer-hosted environments, and volatile cross-currency movements.

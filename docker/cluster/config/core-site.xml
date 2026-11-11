@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- Default File System: Point to NameNode on Master Container -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hadoop-master:9000</value>
+        <description>The name of the default file system URI.</description>
+    </property>
+
+    <!-- Temporary Files Directory -->
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/opt/hadoop/tmp</value>
+        <description>A base for other temporary directories.</description>
+    </property>
+
+    <!-- Proxy User Configuration for Superuser Impersonation -->
+    <property>
+        <name>hadoop.proxyuser.root.hosts</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.root.groups</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hadoop.hosts</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hadoop.groups</name>
+        <value>*</value>
+    </property>
+
+    <!-- Buffer Size for Stream Transfers -->
+    <property>
+        <name>io.file.buffer.size</name>
+        <value>131072</value>
+    </property>
+</configuration>
+

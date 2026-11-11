@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "tolerance": 0.001,
+  "table_audits": {
+    "risk_return_metrics": {
+      "spark_rows": 50,
+      "ground_truth_rows": 50,
+      "matched_instruments": 50,
+      "max_abs_diff_annualized_return": 5e-05,
+      "max_abs_diff_annualized_volatility": 4.9e-05,
+      "max_abs_diff_sharpe_ratio_rf6": 4.9e-05,
+      "max_abs_diff_positive_days_pct": 4.9e-05,
+      "status": "PASS"
+    },
+    "benchmark_relative_metrics": {
+      "spark_rows": 50,
+      "ground_truth_rows": 50,
+      "matched_instruments": 50,
+      "max_abs_diff_beta": 4.8e-05,
+      "max_abs_diff_jensen_alpha_rf6": 5e-05,
+      "max_abs_diff_tracking_error": 5e-05,
+      "status": "PASS"
+    },
+    "market_regime_breadth": {
+      "spark_rows": 2467,
+      "ground_truth_rows": 2467,
+      "matched_dates": 2467,
+      "max_abs_diff_advance_ratio": 4.9e-05,
+      "max_abs_diff_pct_above_ma200": 4.9e-05,
+      "status": "PASS"
+    },
+    "composite_stock_rankings": {
+      "spark_rows": 50,
+      "unique_equities": 50,
+      "score_monotonicity_verified": true,
+      "score_range_verified": true,
+      "min_score": 2.96,
+      "max_score": 81.22,
+      "top_equity": "HCLTECH",
+      "status": "PASS"
+    }
+  },
+  "anti_leakage_audit": {
+    "target_column_present_in_source": true,
+    "target_isolated_from_historical_features": true,
+    "historical_metrics_computed_from_historical_returns_only": true,
+    "status": "PASS"
+  },
+  "edge_case_audits": {
+    "covid_shock_2020_captured": true,
+    "zero_volatility_guard": "All 50 symbols have non-zero positive volatility",
+    "correlation_symmetry_check": "Correlation matrix is strictly symmetric with 1.0 diagonal",
+    "status": "PASS"
+  }
+}

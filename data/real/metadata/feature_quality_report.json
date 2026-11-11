@@ -1,0 +1,100 @@
+{
+  "quality_audit_timestamp": "2026-11-09T13:46:58Z",
+  "audit_status": "PASS",
+  "market_features_summary": {
+    "total_instruments_processed": 50,
+    "total_records": 121962,
+    "total_features_generated": 30,
+    "date_range": {
+      "start": "2015-01-01",
+      "end": "2024-12-31"
+    },
+    "null_value_counts": {
+      "date": 0,
+      "symbol": 0,
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0,
+      "adj_close": 0,
+      "volume": 0,
+      "daily_adjusted_return": 50,
+      "log_return": 50,
+      "return_5d": 250,
+      "return_20d": 1000,
+      "return_60d": 3000,
+      "volatility_20d": 100,
+      "volatility_60d": 100,
+      "ma_20": 0,
+      "ma_50": 0,
+      "ma_200": 0,
+      "adj_ma_20": 0,
+      "adj_ma_50": 0,
+      "adj_ma_200": 0,
+      "volume_ma_20": 0,
+      "volume_ratio": 0,
+      "hl_pct_range": 0,
+      "rolling_max_drawdown_60d": 0,
+      "benchmark_daily_return": 440,
+      "benchmark_log_return": 440,
+      "benchmark_drawdown_60d": 392,
+      "relative_return_vs_nifty": 442,
+      "target_next_day_return": 50
+    },
+    "null_value_percentages": {
+      "date": 0.0,
+      "symbol": 0.0,
+      "open": 0.0,
+      "high": 0.0,
+      "low": 0.0,
+      "close": 0.0,
+      "adj_close": 0.0,
+      "volume": 0.0,
+      "daily_adjusted_return": 0.04,
+      "log_return": 0.04,
+      "return_5d": 0.2,
+      "return_20d": 0.82,
+      "return_60d": 2.46,
+      "volatility_20d": 0.08,
+      "volatility_60d": 0.08,
+      "ma_20": 0.0,
+      "ma_50": 0.0,
+      "ma_200": 0.0,
+      "adj_ma_20": 0.0,
+      "adj_ma_50": 0.0,
+      "adj_ma_200": 0.0,
+      "volume_ma_20": 0.0,
+      "volume_ratio": 0.0,
+      "hl_pct_range": 0.0,
+      "rolling_max_drawdown_60d": 0.0,
+      "benchmark_daily_return": 0.36,
+      "benchmark_log_return": 0.36,
+      "benchmark_drawdown_60d": 0.32,
+      "relative_return_vs_nifty": 0.36,
+      "target_next_day_return": 0.04
+    },
+    "warm_up_documentation": {
+      "return_5d": "First 5 rows per symbol are null (warm-up)",
+      "return_20d_ma_20_vol_20d": "First 19-20 rows per symbol are null/partial (warm-up)",
+      "return_60d_vol_60d_drawdown": "First 59-60 rows per symbol are null/partial (warm-up)",
+      "ma_200_adj_ma_200": "First 199 rows per symbol are null/partial (warm-up)",
+      "target_next_day_return": "Final row per symbol is null (future target)"
+    },
+    "look_ahead_leakage_verification": {
+      "target_shift_verified": true,
+      "latest_row_target_null": true,
+      "leakage_test_passed": true
+    }
+  },
+  "news_features_summary": {
+    "total_records_cleaned": 79,
+    "daily_aggregates_rows": 78,
+    "companies_covered": 50,
+    "temporal_coverage": "2024 only (2015-2023 zero coverage preserved)"
+  },
+  "document_features_summary": {
+    "documents_processed": 4,
+    "total_words": 1326,
+    "classification": "Curated Executive MD&A / Strategic Overview Disclosure"
+  }
+}

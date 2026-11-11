@@ -1,0 +1,628 @@
+{
+  "timestamp": "2026-11-10T16:36:18Z",
+  "target_hdfs_root": "/financial-intelligence/real",
+  "total_files_uploaded": 77,
+  "upload_duration_sec": 328.48,
+  "configured_replication": 2,
+  "hdfs_count_summary": "QUOTA       REM_QUOTA     SPACE_QUOTA REM_SPACE_QUOTA    DIR_COUNT   FILE_COUNT       CONTENT_SIZE PATHNAME\n        none             inf            none             inf           11           77           91245176 /financial-intelligence/real",
+  "hdfs_du_summary": "91245176  182490352  /financial-intelligence/real",
+  "fsck_report_summary": "S-e9c3102f-0c79-4af6-9564-35e40cb5266c,DISK], DatanodeInfoWithStorage[172.18.0.4:9866,DS-89f23b64-929e-435a-8946-afbd2a9b5d4b,DISK]]\n\n\nStatus: HEALTHY\n Number of data-nodes:\t2\n Number of racks:\t\t1\n Total dirs:\t\t\t11\n Total symlinks:\t\t0\n\nReplicated Blocks:\n Total size:\t91245176 B\n Total files:\t77\n Total blocks (validated):\t77 (avg. block size 1185002 B)\n Minimally replicated blocks:\t77 (100.0 %)\n Over-replicated blocks:\t0 (0.0 %)\n Under-replicated blocks:\t0 (0.0 %)\n Mis-replicated blocks:\t\t0 (0.0 %)\n Default replication factor:\t2\n Average block replication:\t2.0\n Missing blocks:\t\t0\n Corrupt blocks:\t\t0\n Missing replicas:\t\t0 (0.0 %)\n Blocks queued for replication:\t0\n\nErasure Coded Block Groups:\n Total size:\t0 B\n Total files:\t0\n Total block groups (validated):\t0\n Minimally erasure-coded block groups:\t0\n Over-erasure-coded block groups:\t0\n Under-erasure-coded block groups:\t0\n Unsatisfactory placement block groups:\t0\n Average block group size:\t0.0\n Missing block groups:\t\t0\n Corrupt block groups:\t\t0\n Missing internal blocks:\t0\n Blocks queued for replication:\t0\nFSCK ended at Tue Nov 10 16:36:14 UTC 2026 in 104 milliseconds\n\n\nThe filesystem under path '/financial-intelligence/real' is HEALTHY",
+  "uploaded_files": [
+    {
+      "filename": "ADANIENT.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ADANIENT.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ADANIENT.csv",
+      "size_bytes": 168033,
+      "sha256": "e88ac0ba0b91db3d34986d136b93a666e3c709fcc3a076013ff146e6c7e0c094",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ADANIPORTS.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ADANIPORTS.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ADANIPORTS.csv",
+      "size_bytes": 162748,
+      "sha256": "a34a2fe4e8b5d0d7d44cbf1e14faed7ed60ccbdaf71e863eb35e75bd808d6b25",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "APOLLOHOSP.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\APOLLOHOSP.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/APOLLOHOSP.csv",
+      "size_bytes": 175917,
+      "sha256": "4d7c45605ad24045caf4b9c616a18bfc005bd8687343a486a23f809e9052233b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ASIANPAINT.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ASIANPAINT.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ASIANPAINT.csv",
+      "size_bytes": 172657,
+      "sha256": "1bf2d1e00f896459d5adb2358567b24bd6f06fdc6c052b0bd28c42b39720452a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "AXISBANK.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\AXISBANK.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/AXISBANK.csv",
+      "size_bytes": 158700,
+      "sha256": "29a61e1ae2005fa3450e6d155e1d153dbcac057c81c71539116bfdec7a985bb0",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BAJAJ-AUTO.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BAJAJ-AUTO.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BAJAJ-AUTO.csv",
+      "size_bytes": 178886,
+      "sha256": "86390384ce020a6cf86b068607950fa33e860499bb28eee0f3788683844c398f",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BAJAJFINSV.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BAJAJFINSV.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BAJAJFINSV.csv",
+      "size_bytes": 169063,
+      "sha256": "8587d8308f172fd3c7032ec38ca861d437256bcc48a1ce79ac61aadd9e536d6b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BAJFINANCE.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BAJFINANCE.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BAJFINANCE.csv",
+      "size_bytes": 166914,
+      "sha256": "3dcdb6708dfffb59cb5b4c4e971964632e2420d703c5b88f2495992de7f95849",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BEL.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BEL.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BEL.csv",
+      "size_bytes": 151879,
+      "sha256": "52b84cf461f1ca932e5a00dc42ec46781eb840b532d7ce80902f104941550f74",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BHARTIARTL.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BHARTIARTL.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BHARTIARTL.csv",
+      "size_bytes": 179980,
+      "sha256": "2c789dafc541df68e5880707dd317aea45ccca272a8d3aca45e03fe89f60399b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BPCL.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BPCL.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BPCL.csv",
+      "size_bytes": 156090,
+      "sha256": "8342aa924619cdb89260c28b518c35ddeb4a87d142271df3b1b2efaad01ed572",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "BRITANNIA.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\BRITANNIA.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/BRITANNIA.csv",
+      "size_bytes": 176160,
+      "sha256": "b240474acc8a310e0218d018d73757220719c074f57e7ef84f5f5e8c663f3d17",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "CIPLA.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\CIPLA.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/CIPLA.csv",
+      "size_bytes": 151073,
+      "sha256": "7eaf5a5454aadf5b10b51b974b36e677f20602792dbdcbe5bb9b4ad7b36e36f9",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "COALINDIA.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\COALINDIA.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/COALINDIA.csv",
+      "size_bytes": 159272,
+      "sha256": "835c8ae48f901567dc668683c5f82a3b761c56004b1f6161e41bebcac8ec4434",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "DIVISLAB.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\DIVISLAB.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/DIVISLAB.csv",
+      "size_bytes": 168924,
+      "sha256": "0fef39be6415268e0c3e49ba176db1f865ba44d96b594b18511c28124778a905",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "DRREDDY.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\DRREDDY.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/DRREDDY.csv",
+      "size_bytes": 158865,
+      "sha256": "8c5d4f692444a25736cf919701f2881621d8e1179f14fca25087d53d62aac9ee",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "EICHERMOT.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\EICHERMOT.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/EICHERMOT.csv",
+      "size_bytes": 177706,
+      "sha256": "935bbd34390cd14753f403975c40fd52fdc417667fcdbdee35693dfd13590a5b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "GRASIM.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\GRASIM.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/GRASIM.csv",
+      "size_bytes": 179438,
+      "sha256": "6f2eab1d5304c146c73e9525e85a2bd1d5916dd453cb4f79d6efbd23ac60da5b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HCLTECH.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HCLTECH.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HCLTECH.csv",
+      "size_bytes": 160098,
+      "sha256": "6ab6ca4406b06033af3f1d018c603b4522299c2cb6863c31576dfdb789594719",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HDFCBANK.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HDFCBANK.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HDFCBANK.csv",
+      "size_bytes": 166785,
+      "sha256": "b9104e4ee984e67cf621a0755961b7022ca3ce3568e5cfecafc0c938f30b02cb",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HDFCLIFE.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HDFCLIFE.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HDFCLIFE.csv",
+      "size_bytes": 111207,
+      "sha256": "e1a02d84bb278e5ed20d9c9dfd8ee1416dd76e370bef212f2acda8c42ddc2ef2",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HEROMOTOCO.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HEROMOTOCO.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HEROMOTOCO.csv",
+      "size_bytes": 178358,
+      "sha256": "1f6c2e3a01554b9235e43c5c1b6219cdf28304bd4df5087780cfa18993fd2480",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HINDALCO.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HINDALCO.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HINDALCO.csv",
+      "size_bytes": 156357,
+      "sha256": "62a6c05839636af17a7806332a46115bf724bc3b21f2aec5e7875a2c0f6d3405",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HINDUNILVR.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\HINDUNILVR.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/HINDUNILVR.csv",
+      "size_bytes": 173164,
+      "sha256": "6f4f687075e571fbd5a2692cf02814feb0adbed1f90e1502d2ebb9a12416e27f",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ICICIBANK.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ICICIBANK.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ICICIBANK.csv",
+      "size_bytes": 167945,
+      "sha256": "6488cbbf315e61da35fc9d856dfaad616c55d734b08aedd84455723c7cb77592",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "INFY.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\INFY.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/INFY.csv",
+      "size_bytes": 154361,
+      "sha256": "e7777eb20e6e904b43290b068f5d682b82002b5da973d8eb8043f9a7a0d6f4a7",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ITC.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ITC.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ITC.csv",
+      "size_bytes": 170476,
+      "sha256": "aa93c986ebe4c6779a6ac3707ec9845faeb90306fa55cbbaabaad55ac9623814",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "JSWSTEEL.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\JSWSTEEL.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/JSWSTEEL.csv",
+      "size_bytes": 156907,
+      "sha256": "fbf6dc6fd428f410e5998fd264a1fdce932796b845385ba73a708a1e5b5a14b6",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "KOTAKBANK.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\KOTAKBANK.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/KOTAKBANK.csv",
+      "size_bytes": 163355,
+      "sha256": "2e2657b7d7583f52735a6be63f09f7194626ba4de8d73d66bba11b7977830cc0",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "LT.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\LT.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/LT.csv",
+      "size_bytes": 156350,
+      "sha256": "663aff0676278fae24ed2de9934d2e8a5284bd511bec946f39c206682dcca37f",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "M&M.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\M&M.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/M&M.csv",
+      "size_bytes": 149064,
+      "sha256": "756e2306d7af31c02a32c907c5e734a1d87b1bd39612fd51195f8006ab9bcbcf",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "MARUTI.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\MARUTI.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/MARUTI.csv",
+      "size_bytes": 174074,
+      "sha256": "4366bdbba641681d8871a05f18995a272bd82e700a656581ab66bd7b357877ac",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "NESTLEIND.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\NESTLEIND.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/NESTLEIND.csv",
+      "size_bytes": 170730,
+      "sha256": "990129c62c3a10171899d7a097c143aa274b641d87920b72aa100bbccda3a329",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "NIFTY50_INDEX.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\NIFTY50_INDEX.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/NIFTY50_INDEX.csv",
+      "size_bytes": 206737,
+      "sha256": "9bc633ca2e62369dae43be4f666f03300e137977249a5c0a1ee178693926fc82",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "NTPC.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\NTPC.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/NTPC.csv",
+      "size_bytes": 153815,
+      "sha256": "73d54ff5814db47ad3a721cb3cc30fc2104e1abc4255005c36fb74528e7e48f3",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ONGC.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ONGC.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ONGC.csv",
+      "size_bytes": 148995,
+      "sha256": "faf86938982d91fe112bb32e69a6589fd32010666be5cbfabc37d2f69343d7cb",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "POWERGRID.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\POWERGRID.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/POWERGRID.csv",
+      "size_bytes": 175043,
+      "sha256": "24755ff581ffb18cd238dbe7abbc79b62df852f74bc030cd85487b0cc7ed2209",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "RELIANCE.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\RELIANCE.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/RELIANCE.csv",
+      "size_bytes": 184765,
+      "sha256": "ae460b9e3bbb47f9b1d87b2d4888f4f2eb4d6ff082715c0da60a05d23b86714a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "SBILIFE.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\SBILIFE.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/SBILIFE.csv",
+      "size_bytes": 114941,
+      "sha256": "b6879a4ccbdfe8a6fd93711e1d84257fcae3f3e54b382034fca1792892cda8ab",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "SBIN.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\SBIN.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/SBIN.csv",
+      "size_bytes": 148768,
+      "sha256": "058e0529312ec8187cc4666ee47a2f4ae63655380f487080acad999bbc91a282",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "SHREECEM.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\SHREECEM.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/SHREECEM.csv",
+      "size_bytes": 188015,
+      "sha256": "b75424686182c1bca4ec82c0914f617b38e3065d09718604d3c3a171cc257503",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "SUNPHARMA.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\SUNPHARMA.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/SUNPHARMA.csv",
+      "size_bytes": 161159,
+      "sha256": "55705ac66fe572ac174264ffff414bee636d244350eb185ebbf8470df4032cdc",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TATACONSUM.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TATACONSUM.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TATACONSUM.csv",
+      "size_bytes": 162121,
+      "sha256": "92f7cac0e2b51d9a5b28c38c9efcacd2f7f491075ed749e1c1dd09deae48eb26",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TATAMOTORS.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TATAMOTORS.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TATAMOTORS.csv",
+      "size_bytes": 163449,
+      "sha256": "32e14aee530585c122110381808cbcf30b5cd0f21d765d8dac3477de49836e52",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TATASTEEL.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TATASTEEL.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TATASTEEL.csv",
+      "size_bytes": 164933,
+      "sha256": "732ab022b3463eb8444154286aac5c9236e370e42b8521c1784728dc251f6d35",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TCS.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TCS.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TCS.csv",
+      "size_bytes": 160841,
+      "sha256": "bb0c9203045d3278bef5f51ad0756761f4ce074000b4b2b110627baf1df39ce7",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TECHM.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TECHM.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TECHM.csv",
+      "size_bytes": 152983,
+      "sha256": "dad3c4d4dd94f13815d1d2a75df571b21b6e3b9ae4b8db55912aacd054ddfad5",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TITAN.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TITAN.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TITAN.csv",
+      "size_bytes": 156987,
+      "sha256": "e20cacba1208638949c074a69c6a135ec88f8a7e5bef706d05a224e33bcd0c29",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TRENT.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\TRENT.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/TRENT.csv",
+      "size_bytes": 152209,
+      "sha256": "fba2315a1b9e74b5e77a1ce0a10d80fa4d91498e995bf45782b93520d505d875",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ULTRACEMCO.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\ULTRACEMCO.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/ULTRACEMCO.csv",
+      "size_bytes": 182073,
+      "sha256": "0786169713ae0329ce2bf8edbb97add3c433c07acf622aaa3bfb649a3869847b",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "WIPRO.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\market\\WIPRO.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/market/WIPRO.csv",
+      "size_bytes": 160588,
+      "sha256": "435c2c1c274393682228f64d29c7e0a94bb79178a1d564d398debd7f36e37f4e",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "financial_news.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\news\\financial_news.csv",
+      "hdfs_destination": "/financial-intelligence/real/raw/news/financial_news.csv",
+      "size_bytes": 37866,
+      "sha256": "17a45c292469733118b2922f97449646e567e9f31196411fbbd48690c54fb9d4",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HDFCBANK_Annual_Report_FY24_Financial_Disclosures.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\documents\\HDFCBANK_Annual_Report_FY24_Financial_Disclosures.txt",
+      "hdfs_destination": "/financial-intelligence/real/raw/documents/HDFCBANK_Annual_Report_FY24_Financial_Disclosures.txt",
+      "size_bytes": 2141,
+      "sha256": "846ce26872e68f1ac30654da56db55c2afb4d6d9ac83893bbcc7d79523f0daa9",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "INFY_Annual_Report_FY24_Governance_and_Strategy.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\documents\\INFY_Annual_Report_FY24_Governance_and_Strategy.txt",
+      "hdfs_destination": "/financial-intelligence/real/raw/documents/INFY_Annual_Report_FY24_Governance_and_Strategy.txt",
+      "size_bytes": 2157,
+      "sha256": "f30b492a2cb74b5adb0ef6766cf538bfb4cc0da64aa3f33b32d4148c3791eebe",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "RELIANCE_Annual_Report_FY24_Strategic_Overview.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\documents\\RELIANCE_Annual_Report_FY24_Strategic_Overview.txt",
+      "hdfs_destination": "/financial-intelligence/real/raw/documents/RELIANCE_Annual_Report_FY24_Strategic_Overview.txt",
+      "size_bytes": 2669,
+      "sha256": "08d08b8ddeecb6bb3d140603042d6f6ba42c489332a8ac7004edd753935ee0d4",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TCS_Annual_Report_FY24_Business_Review.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\raw\\documents\\TCS_Annual_Report_FY24_Business_Review.txt",
+      "hdfs_destination": "/financial-intelligence/real/raw/documents/TCS_Annual_Report_FY24_Business_Review.txt",
+      "size_bytes": 2365,
+      "sha256": "afcdf076369e49c8fb38be998d5bf19c7836e9d04cd31593d8ab99ea983c5a1d",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "consolidated_market_features.parquet",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\market\\consolidated_market_features.parquet",
+      "hdfs_destination": "/financial-intelligence/real/processed/market/consolidated_market_features.parquet",
+      "size_bytes": 26218967,
+      "sha256": "222da866bb06e0ae140b5e439618c623e0a2d65335b15a46ab0f3520b7100d5d",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "consolidated_market_features.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\market\\consolidated_market_features.csv",
+      "hdfs_destination": "/financial-intelligence/real/processed/market/consolidated_market_features.csv",
+      "size_bytes": 55535148,
+      "sha256": "c2ce19f06c47d44773cb081fdebdd5a4b1ad6182c5f753f0c41f0711165c7bae",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "benchmark_features.parquet",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\market\\benchmark_features.parquet",
+      "hdfs_destination": "/financial-intelligence/real/processed/benchmark/benchmark_features.parquet",
+      "size_bytes": 294631,
+      "sha256": "654af8bfc115415511bc4877d04c3a1dc9c435c05e5100cc4ae8e0820388a0a0",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "benchmark_features.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\market\\benchmark_features.csv",
+      "hdfs_destination": "/financial-intelligence/real/processed/benchmark/benchmark_features.csv",
+      "size_bytes": 567868,
+      "sha256": "16a414d2fa362ed32ab4cb816c42be20f3a4f9bae0527bb849ed72a5c297bfc8",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "cleaned_financial_news.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\news\\cleaned_financial_news.csv",
+      "hdfs_destination": "/financial-intelligence/real/processed/news/cleaned_financial_news.csv",
+      "size_bytes": 57981,
+      "sha256": "1e732e8f9a84f3abb08eff73f8ef2437640a8cef7d5e2f9f8e35f4cfe74bc80a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "daily_company_news_features.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\news\\daily_company_news_features.csv",
+      "hdfs_destination": "/financial-intelligence/real/processed/news/daily_company_news_features.csv",
+      "size_bytes": 4256,
+      "sha256": "fa0ab10279968204a6ecae655cf3175a6cbbce74dac1ef082e637035d3a99ce4",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "HDFCBANK_clean_executive_overview_Financial_Disclosures.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\documents\\cleaned_corporate_documents\\HDFCBANK_clean_executive_overview_Financial_Disclosures.txt",
+      "hdfs_destination": "/financial-intelligence/real/processed/documents/HDFCBANK_clean_executive_overview_Financial_Disclosures.txt",
+      "size_bytes": 2141,
+      "sha256": "846ce26872e68f1ac30654da56db55c2afb4d6d9ac83893bbcc7d79523f0daa9",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "INFY_clean_executive_overview_Governance_and_Strategy.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\documents\\cleaned_corporate_documents\\INFY_clean_executive_overview_Governance_and_Strategy.txt",
+      "hdfs_destination": "/financial-intelligence/real/processed/documents/INFY_clean_executive_overview_Governance_and_Strategy.txt",
+      "size_bytes": 2157,
+      "sha256": "f30b492a2cb74b5adb0ef6766cf538bfb4cc0da64aa3f33b32d4148c3791eebe",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "RELIANCE_clean_executive_overview_Strategic_Overview.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\documents\\cleaned_corporate_documents\\RELIANCE_clean_executive_overview_Strategic_Overview.txt",
+      "hdfs_destination": "/financial-intelligence/real/processed/documents/RELIANCE_clean_executive_overview_Strategic_Overview.txt",
+      "size_bytes": 2669,
+      "sha256": "08d08b8ddeecb6bb3d140603042d6f6ba42c489332a8ac7004edd753935ee0d4",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "TCS_clean_executive_overview_Business_Review.txt",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\processed\\documents\\cleaned_corporate_documents\\TCS_clean_executive_overview_Business_Review.txt",
+      "hdfs_destination": "/financial-intelligence/real/processed/documents/TCS_clean_executive_overview_Business_Review.txt",
+      "size_bytes": 2365,
+      "sha256": "afcdf076369e49c8fb38be998d5bf19c7836e9d04cd31593d8ab99ea983c5a1d",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "data_quality_report.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\data_quality_report.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/data_quality_report.json",
+      "size_bytes": 42216,
+      "sha256": "19c99c6a56cc8c46f648f7d91259c6f476e400f5ea8146be32b863fdbb95db56",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "document_completeness_audit.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\document_completeness_audit.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/document_completeness_audit.json",
+      "size_bytes": 4490,
+      "sha256": "e9124ade29c64725aded095b6c1be10d137a6ef55ac88d9f5c8982bc9ca56169",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "document_manifest.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\document_manifest.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/document_manifest.json",
+      "size_bytes": 3338,
+      "sha256": "2105cb1cbc9b3dec2a73f802d2f629cf60be852f7441a3fcd3194f8d9750a09a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "feature_engineering_manifest.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\feature_engineering_manifest.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/feature_engineering_manifest.json",
+      "size_bytes": 4910,
+      "sha256": "9d619700ad6651191e87e3a312b2f9c8312afbfff6b952553cb5fce0dc70a4df",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "feature_quality_report.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\feature_quality_report.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/feature_quality_report.json",
+      "size_bytes": 3015,
+      "sha256": "219d3bad1da29f197b45799b7e4d6edfaf0dc36d4ce3e654b481ee765091b55f",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "market_download_manifest.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\market_download_manifest.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/market_download_manifest.json",
+      "size_bytes": 27098,
+      "sha256": "18788c50d6185d6e1f5d2bdd9d27b35cd9c8c9e2282e8fdeace88e3c41e19b4a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "news_download_manifest.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\news_download_manifest.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/news_download_manifest.json",
+      "size_bytes": 1774,
+      "sha256": "18630914a0474580f14a4366c49199de8185071a6430b6b858b456a96ccc58e3",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "nifty50_constituents.json",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\nifty50_constituents.json",
+      "hdfs_destination": "/financial-intelligence/real/metadata/nifty50_constituents.json",
+      "size_bytes": 14200,
+      "sha256": "5ebab03cc05864e426d34cbf32c59fd6c82f8d92973911991a2c5b1cae46827c",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "instrument_identity_audit.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\instrument_identity_audit.csv",
+      "hdfs_destination": "/financial-intelligence/real/metadata/instrument_identity_audit.csv",
+      "size_bytes": 18306,
+      "sha256": "f23486c9123864cb52bd4443001f53e5c397c1a06079ad70f739c7421222ba4a",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "news_coverage_audit.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\news_coverage_audit.csv",
+      "hdfs_destination": "/financial-intelligence/real/metadata/news_coverage_audit.csv",
+      "size_bytes": 18942,
+      "sha256": "6b5f28885e78419c258ac7d8568e86072b7b833ee2fdce838fca61d144f62783",
+      "status": "UPLOADED"
+    },
+    {
+      "filename": "ticker_coverage_audit.csv",
+      "local_path": "C:\\Projects\\BigDataProject\\data\\real\\metadata\\ticker_coverage_audit.csv",
+      "hdfs_destination": "/financial-intelligence/real/metadata/ticker_coverage_audit.csv",
+      "size_bytes": 11548,
+      "sha256": "902b9dcd37ce701886a24c47ab893d5e9bd84e04b8170cc70d02563d43e653bb",
+      "status": "UPLOADED"
+    }
+  ]
+}

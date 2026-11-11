@@ -1,0 +1,481 @@
+{
+  "dataset_scope": {
+    "total_news_records": 79,
+    "date_range": "2024-01-05 to 2024-10-15",
+    "instrument_coverage_count": 50,
+    "corporate_documents_analyzed": 4
+  },
+  "event_category_distribution": {
+    "General_Corporate_Announcement": 31,
+    "Contracts_and_Expansion": 15,
+    "Earnings_and_Results": 14,
+    "Capital_Raising_and_Capex": 12,
+    "Corporate_Action_and_Regulatory": 7
+  },
+  "company_disclosure_summary": [
+    {
+      "ticker": "INFY",
+      "total_disclosures": 3,
+      "positive_count": 1,
+      "neutral_count": 2,
+      "negative_count": 0,
+      "mean_sentiment": 0.25930000000000003
+    },
+    {
+      "ticker": "HDFCBANK",
+      "total_disclosures": 3,
+      "positive_count": 2,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.42239999999999994
+    },
+    {
+      "ticker": "RELIANCE",
+      "total_disclosures": 3,
+      "positive_count": 2,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.5459999999999999
+    },
+    {
+      "ticker": "TCS",
+      "total_disclosures": 3,
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "mean_sentiment": 0.432
+    },
+    {
+      "ticker": "BHARTIARTL",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.23885
+    },
+    {
+      "ticker": "ONGC",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.2231
+    },
+    {
+      "ticker": "AXISBANK",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.38895
+    },
+    {
+      "ticker": "BAJFINANCE",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.38895
+    },
+    {
+      "ticker": "MARUTI",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.2685
+    },
+    {
+      "ticker": "NTPC",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.2231
+    },
+    {
+      "ticker": "HCLTECH",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.2268
+    },
+    {
+      "ticker": "HINDUNILVR",
+      "total_disclosures": 2,
+      "positive_count": 0,
+      "neutral_count": 2,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "LT",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.3808
+    },
+    {
+      "ticker": "ICICIBANK",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.482
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "total_disclosures": 2,
+      "positive_count": 0,
+      "neutral_count": 2,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "M&M",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.3808
+    },
+    {
+      "ticker": "ADANIENT",
+      "total_disclosures": 2,
+      "positive_count": 0,
+      "neutral_count": 2,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "ADANIPORTS",
+      "total_disclosures": 2,
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.44565
+    },
+    {
+      "ticker": "TITAN",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.33225
+    },
+    {
+      "ticker": "ULTRACEMCO",
+      "total_disclosures": 2,
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.59525
+    },
+    {
+      "ticker": "TATAMOTORS",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.3966
+    },
+    {
+      "ticker": "SBIN",
+      "total_disclosures": 2,
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4601
+    },
+    {
+      "ticker": "KOTAKBANK",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.3808
+    },
+    {
+      "ticker": "POWERGRID",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.18995
+    },
+    {
+      "ticker": "ITC",
+      "total_disclosures": 2,
+      "positive_count": 1,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.37215
+    },
+    {
+      "ticker": "COALINDIA",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.7779
+    },
+    {
+      "ticker": "BEL",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "mean_sentiment": -0.4777
+    },
+    {
+      "ticker": "BAJAJFINSV",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "mean_sentiment": -0.4136
+    },
+    {
+      "ticker": "ASIANPAINT",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "BAJAJ-AUTO",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "APOLLOHOSP",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4777
+    },
+    {
+      "ticker": "CIPLA",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "BRITANNIA",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "BPCL",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "GRASIM",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "EICHERMOT",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.8668
+    },
+    {
+      "ticker": "DRREDDY",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "DIVISLAB",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "HDFCLIFE",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4462
+    },
+    {
+      "ticker": "JSWSTEEL",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.3799
+    },
+    {
+      "ticker": "HEROMOTOCO",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4462
+    },
+    {
+      "ticker": "HINDALCO",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "NESTLEIND",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "TATACONSUM",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.7064
+    },
+    {
+      "ticker": "SBILIFE",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "SHREECEM",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4777
+    },
+    {
+      "ticker": "TECHM",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "TATASTEEL",
+      "total_disclosures": 1,
+      "positive_count": 0,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "mean_sentiment": 0.0
+    },
+    {
+      "ticker": "TRENT",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.7443
+    },
+    {
+      "ticker": "WIPRO",
+      "total_disclosures": 1,
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "mean_sentiment": 0.4462
+    }
+  ],
+  "sentiment_distribution": {
+    "Positive": 38,
+    "Neutral": 38,
+    "Negative": 3,
+    "mean_score": 0.2862
+  },
+  "market_return_temporal_association": {
+    "aligned_observation_count": 67,
+    "same_day_correlation": 0.0888,
+    "next_day_correlation": -0.1471,
+    "statistical_caveat": "Correlation reflects temporal co-movement, not causality. Sample is restricted to 2024 disclosures."
+  },
+  "corporate_filings_extract_summary": [
+    {
+      "filename": "HDFCBANK_Annual_Report_FY24_Financial_Disclosures.txt",
+      "word_count": 310,
+      "character_count": 2117,
+      "key_themes": [
+        "transformation",
+        "growth",
+        "digital",
+        "capital"
+      ]
+    },
+    {
+      "filename": "INFY_Annual_Report_FY24_Governance_and_Strategy.txt",
+      "word_count": 308,
+      "character_count": 2132,
+      "key_themes": [
+        "transformation",
+        "growth",
+        "governance",
+        "strategy",
+        "renewable"
+      ]
+    },
+    {
+      "filename": "RELIANCE_Annual_Report_FY24_Strategic_Overview.txt",
+      "word_count": 380,
+      "character_count": 2646,
+      "key_themes": [
+        "growth",
+        "digital",
+        "capital"
+      ]
+    },
+    {
+      "filename": "TCS_Annual_Report_FY24_Business_Review.txt",
+      "word_count": 328,
+      "character_count": 2337,
+      "key_themes": [
+        "transformation",
+        "growth",
+        "digital",
+        "capital"
+      ]
+    }
+  ],
+  "academic_limitations": [
+    "News dataset is cross-sectional across calendar year 2024 and does not span the full 10-year market history.",
+    "Text inputs consist of official headlines and lead snippets rather than full-length journalistic articles.",
+    "Corporate filings are executive MD&A and strategic overview extracts, not full 400-page annual reports.",
+    "Observed return-sentiment correlations must not be interpreted as predictive or causal signals."
+  ]
+}

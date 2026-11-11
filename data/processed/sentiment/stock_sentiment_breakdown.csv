@@ -1,0 +1,11 @@
+symbol,total_articles,positive_count,neutral_count,negative_count,mean_sentiment,dominant_regime
+INFY,62,18,30,14,0.0435,Neutral
+SBIN,61,22,27,12,0.0743,Neutral
+WIPRO,59,21,30,8,0.1301,Neutral
+HDFCBANK,57,27,22,8,0.1973,Positive
+TCS,55,13,30,12,0.0028,Neutral
+ICICIBANK,55,24,20,11,0.136,Positive
+BHARTIARTL,44,14,22,8,0.0849,Neutral
+BAJFINANCE,38,10,20,8,0.0642,Neutral
+LT,37,11,18,8,0.0574,Neutral
+RELIANCE,32,14,14,4,0.1935,Neutral

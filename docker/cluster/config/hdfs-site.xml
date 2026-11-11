@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- HDFS Replication Factor: Set to 2 for 2-Worker Topology -->
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+        <description>Default block replication across available DataNodes.</description>
+    </property>
+
+    <!-- Block Size (64MB optimal for demo and academic datasets) -->
+    <property>
+        <name>dfs.blocksize</name>
+        <value>67108864</value>
+    </property>
+
+    <!-- NameNode Metadata Directory (Persisted Volume) -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///opt/hadoop/data/nameNode</value>
+    </property>
+
+    <!-- DataNode Block Storage Directory (Persisted Volume) -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///opt/hadoop/data/dataNode</value>
+    </property>
+
+    <!-- NameNode RPC and HTTP Endpoints -->
+    <property>
+        <name>dfs.namenode.rpc-address</name>
+        <value>hadoop-master:9000</value>
+    </property>
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>0.0.0.0:9870</value>
+    </property>
+
+    <!-- DataNode HTTP Endpoints -->
+    <property>
+        <name>dfs.datanode.http.address</name>
+        <value>0.0.0.0:9864</value>
+    </property>
+
+    <!-- Disable Permissions Checking for Lab Ease of Use -->
+    <property>
+        <name>dfs.permissions.enabled</name>
+        <value>false</value>
+    </property>
+
+    <!-- Heartbeat and Stale Interval Settings -->
+    <property>
+        <name>dfs.heartbeat.interval</name>
+        <value>3</value>
+    </property>
+    <property>
+        <name>dfs.namenode.stale.datanode.interval</name>
+        <value>30000</value>
+    </property>
+</configuration>
+

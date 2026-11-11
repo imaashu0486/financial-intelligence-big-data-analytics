@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- YARN ResourceManager Hostname and Endpoints -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>hadoop-master</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>hadoop-master:8032</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>hadoop-master:8030</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>hadoop-master:8031</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.admin.address</name>
+        <value>hadoop-master:8033</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.webapp.address</name>
+        <value>0.0.0.0:8088</value>
+    </property>
+
+    <!-- NodeManager Shuffle Service for MapReduce -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+
+    <!-- NodeManager Resource Limits (Configured for 16GB Single-Host Environment) -->
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>2048</value>
+        <description>Amount of physical memory, in MB, that can be allocated for containers.</description>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>2</value>
+        <description>Number of vcores that can be allocated for containers.</description>
+    </property>
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>256</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>1536</value>
+    </property>
+
+    <!-- Memory and Disk Health Checkers (Disabled for Container/WSL Stability) -->
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+        <description>Disables virtual memory ratio checking in containerized environments.</description>
+    </property>
+    <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.enable</name>
+        <value>false</value>
+        <description>Prevents NodeManager from marking itself unhealthy on limited Docker root filesystems.</description>
+    </property>
+
+    <!-- Log Aggregation -->
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.log-aggregation.retain-seconds</name>
+        <value>86400</value>
+    </property>
+</configuration>
+
